@@ -1,33 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Jost:wght@400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  @font-face {
+    font-family: aeoniktrial;
+    src: url("/assets/fonts/AeonikTRIAL-Regular.otf");
+    font-weight: 400;
+    font-display: swap;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  @font-face {
+    font-family: aeoniktrial;
+    src: url("/assets/fonts/AeonikTRIAL-Bold.otf");
+    font-weight: 700;
+    font-display: swap;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  @font-face {
+    font-family: aeoniktrial;
+    src: url("/assets/fonts/AeonikTRIAL-Light.otf");
+    font-weight: 300;
+    font-display: swap;
+  }
+
+  .border_gradent::after {
+    background: linear-gradient(
+      180deg,
+      rgba(11, 6, 42, 0) 15.9%,
+      rgba(51, 182, 255, 0.521096) 59.92%,
+      #33b6ff 100%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .card-shadow {
+    box-shadow: 0px 0px 3px 3px rgba(51, 182, 255, 1);
+  }
+
+  ::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .updown {
+    animation: updown infinite 4s;
+  }
+
+  @keyframes updown {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(10px);
+    }
+  }
+
+  input:-webkit-autofill {
+    -webkit-background-clip: black !important;
+    -webkit-text-fill-color: #75787b !important;
+    background-color: black !important;
+    -webkit-transition: background-color 5000s ease-in-out 0s !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+  }
+
+  .slideDown,
+  .slideUp {
+    transition: transform 0.4s ease-out;
+  }
+
+  .store_slider .slick-dots li button:before {
+    width: 4px !important;
+    height: 6px !important;
+    content: " " !important;
+    opacity: 0.5 !important;
+    color: white !important;
+  }
+
+  .store_slider .slick-dots {
+    bottom: -20px !important;
+  }
+
+  .store_slider .slick-dots li {
+    width: 4px !important;
+    margin: 0 4px !important;
+    height: 6px !important;
+  }
+
+  .store_slider .slick-dots li button {
+    width: 6px !important;
+    height: 6px !important;
+    background-color: white !important;
+    border-radius: 50% !important;
+    opacity: 0.5 !important;
+    padding: 0px !important;
+  }
+
+  .store_slider .slick-dots li.slick-active button {
+    width: 8px !important;
+    height: 8px !important;
+    background-color: white !important;
+    border-radius: 50% !important;
+    opacity: 1 !important;
+  }
+
+  @media (max-width: 480px) {
+    .store_slider .slick-track {
+      margin-left: 23% !important;
+    }
+  }
+
+  .text-gradient {
+    background: linear-gradient(180deg, #142547 0%, rgba(14, 26, 50, 0) 80.15%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-shadow {
+    text-shadow: 0px 1.369px 4.79px rgba(0, 0, 0, 0.25);
+  }
+
+  .not-found-z-logo {
+    max-width: 150px !important;
+  }
+
+  @media (min-width: 640px) {
+    .text-gradient {
+      background: linear-gradient(
+        180deg,
+        #0e1a32 0%,
+        rgba(14, 26, 50, 0) 108.5%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .not-found-z-logo {
+      max-width: 200px !important;
+    }
+  }
+
+  .blur_filter {
+    backdrop-filter: blur(100px);
+  }
+
+  .layer_bg {
+    background: linear-gradient(270deg, #000c24 0%, rgba(0, 12, 36, 0) 100%);
+  }
+
+  .layer_bg_start {
+    background: linear-gradient(90deg, #000c24 0%, rgba(0, 12, 36, 0) 100%);
+  }
+
+  .sell_amazon_bg {
+    background: rgba(51, 182, 255, 0.1);
+  }
+
+  .common_hero_layer {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -110.43%, #000c24 100%),
+      linear-gradient(
+        0deg,
+        rgba(51, 182, 255, 0.5) 0%,
+        rgba(51, 182, 255, 0.5) 100%
+      ),
+      url(/assets/images/hero/webp/common-hero-bg.webp),
+      lightgray 0px -394.547px / 100% 180.961% no-repeat;
+    background-blend-mode: normal, color, normal;
+    background-position: bottom;
+  }
+
+  .navbar_bulr {
+    /* background: rgba(0, 12, 36, 0.30); */
+    backdrop-filter: blur(10px);
+  }
+  .custom-radio {
+    background-color: red !important;
+    /* change to the desired color */
+  }
+  select {
+    /* background-image: none !important; */
+    appearance: none;
+  }
+  option:hover {
+    background-color: #000c24 !important;
+  }
+
+  .animate_wave {
+    animation: wave_bounce 700ms ease-in-out infinite alternate;
+  }
+  .animate_wave2 {
+    animation: wave_bounce 700ms ease-in-out 250ms infinite alternate;
+  }
+  .animate_wave3 {
+    animation: wave_bounce 700ms ease-in-out 500ms infinite alternate;
+  }
+  @keyframes wave_bounce {
+    0% {
+      transform: translateY(50%);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .hover_blur_filter {
+    box-shadow: 0px 0px 59.8px 0px rgba(50, 181, 254, 0.1);
+    backdrop-filter: blur(111px);
+  }
+  .dodgerblue_blur {
+    backdrop-filter: blur(15px);
+  }
+  ::selection {
+    color: #00a2ff; /* Text color */
+    background: #011b29; /* Background color */
+  }
+
+  /* For older browsers that don't support ::selection */
+  ::-moz-selection {
+    color: #33b6ff;
+    background: #33b6ff;
   }
 }
