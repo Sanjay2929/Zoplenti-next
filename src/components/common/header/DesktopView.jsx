@@ -3,11 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { PeopleIcon, RightArrowIcon, ShoppingIcon } from "../icons/Home";
-import { navigationLinks } from "../helper/Helper";
+import navigationLinks  from "../json/Navbar";
 import NavbarLogo from "../json/NavbarLogo";
 
 const DesktopView = () => {
   const pathName = usePathname();
+  console.log("navigationLinksnavigationLinks",navigationLinks)
   return (
     <>
       <div className="items-center justify-between w-full hidden lg:flex">
@@ -16,7 +17,7 @@ const DesktopView = () => {
         </div>
         <div className="lg:flex md:gap-4 lg:gap-8 hidden">
           {/* Mapping through navigationLinks array to render navigation links */}
-          {navigationLinks.map((data, index) => (
+          {/* {navigationLinks.map((data, index) => (
             <Link
               key={index}
               href={data.link}
@@ -25,7 +26,7 @@ const DesktopView = () => {
             >
               {data.title}
             </Link>
-          ))}
+          ))} */}
         </div>
 
         {/* Additional links container with specified gaps for different screen sizes */}

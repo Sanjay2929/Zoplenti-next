@@ -6,13 +6,13 @@ import Hero from "./Hero";
 const HomePage = () => {
   const [isBannerVisible, setIsBannerVisible] = useState(false);
   return (
-    <div>
+    <>
       <Header
         isBannerVisible={isBannerVisible}
         setIsBannerVisible={setIsBannerVisible}
       />
       <Hero />
-    </div>
+    </>
   );
 };
 

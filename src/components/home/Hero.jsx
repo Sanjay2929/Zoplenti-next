@@ -1,18 +1,27 @@
+// Import necessary modules and components
 "use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { DownCircleArrowIcon, RightArrowIcon } from "../common/icons/Home";
+import { DownCircleArrowIcon } from "../common/icons/Home";
+import CustomButton from "../common/CustomButton";
+
+// Functional component for the Hero section
 const Hero = ({ isBannerVisible }) => {
+  // Get the current pathname using the Next.js navigation hook
   const pathName = usePathname();
+
   return (
     <>
+      {/* Hero section container with dynamic styling based on pathname and banner visibility */}
       <div
         className={`flex-grow-[1] min-h-screen bg-herobg bg-cover bg-no-repeat relative h-full flex flex-col justify-center items-center overflow-hidden ${
+          // Adjust top padding based on pathname and banner visibility
           pathName !== "/" && "pt-[60px]"
         }  ${isBannerVisible ? "!pt-[60px]" : "pt-[150px]"} `}
       >
+        {/* Left logo image */}
         <Image
           className="absolute w-[86px] sm:w-[130px] md:w-[150px] lg:w-[176px] start-[-60px] md:start-[-55px] lg:start-[-80px]"
           height={142}
@@ -20,6 +29,7 @@ const Hero = ({ isBannerVisible }) => {
           src="/assets/common/png/left-right-logo-image.png"
           alt="logo-left"
         />
+        {/* Right logo image */}
         <Image
           className="absolute w-[86px] sm:w-[130px] md:w-[150px] lg:w-[176px] end-[-60px] md:end-[-55px] lg:end-[-80px]"
           height={142}
@@ -44,28 +54,13 @@ const Hero = ({ isBannerVisible }) => {
           </p>
           {/* Action buttons */}
           <div className="flex gap-4 pt-10 lg:pt-12">
-            <Link
-              href="/brands"
-              className="uppercase text-nowrap group shadow-[0px_0px_11px_0px_rgba(2,_169,_247,_0.33)] text-white font-aeoniktrials font-bold text-base py-[11px] px-[14px] rounded bg-dodgerBlue flex items-center gap-[6px] group hover:bg-transparent border border-solid border-dodgerBlue hover:border-white transition-all duration-300 !leading-[150%]"
-            >
-              Brands
-              <span className="group-hover:translate-x-[4px] duration-300">
-                <RightArrowIcon />
-              </span>
-            </Link>
-            <Link
-              href="/distributors"
-              className="uppercase text-nowrap group shadow-[0px_0px_11px_0px_rgba(2,_169,_247,_0.33)] text-white font-aeoniktrials font-bold text-base py-[11px] px-[14px] rounded bg-dodgerBlue flex items-center gap-[6px] group hover:bg-transparent border border-solid border-dodgerBlue hover:border-white transition-all duration-300 !leading-[150%]"
-            >
-              Distributors
-              <span className="group-hover:translate-x-[4px] duration-300">
-                <RightArrowIcon />
-              </span>
-            </Link>
+            <CustomButton title="Brands" url="" />
+            <CustomButton title="Distributors" url="" />
           </div>
           {/* Scroll down arrow */}
           <div className="min-h-[88px] flex items-end">
-            <Link href="#brand" className=" scroll-smooth updown">
+            {/* Link to scroll smoothly to the specified section */}
+            <Link href="#brand" className="scroll-smooth updown">
               <DownCircleArrowIcon />
             </Link>
           </div>
@@ -75,4 +70,5 @@ const Hero = ({ isBannerVisible }) => {
   );
 };
 
+// Export the Hero component as the default export
 export default Hero;

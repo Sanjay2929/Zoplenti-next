@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import NavbarLogo from "../json/NavbarLogo";
 import { CircleCrossIcon, MenuIcon, RightArrowIcon } from "../icons/Home";
-import { navigationLinks } from "../helper/Helper";
+// import { navigationLinks } from "../helper/Helper";
 import { useEffect, useState } from "react";
 
 const MobileView = ({ isBannerVisible }) => {
@@ -68,7 +68,7 @@ const MobileView = ({ isBannerVisible }) => {
           >
             <div className="flex flex-col items-center pt-12 md:pt-16">
               {/* Navigation links container with specified gaps for different screen sizes */}
-              {navigationLinks.map((data, index) => {
+              {/* {navigationLinks.map((data, index) => {
                 return (
                   <div
                     key={index}
@@ -85,7 +85,7 @@ const MobileView = ({ isBannerVisible }) => {
                     </Link>
                   </div>
                 );
-              })}
+              })} */}
             </div>
             {/* Additional links container with specified gaps for different screen sizes */}
             <div className="flex flex-col items-center gap-6 pt-8">
