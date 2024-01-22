@@ -2,7 +2,7 @@ import React from "react";
 import DesktopView from "./DesktopView";
 import MobileView from "./MobileView";
 
-const Navbar = ({ isBannerRemove }) => {
+const HeaderView = ({ isBannerVisible }) => {
   return (
     <>
       {/* Main Header Section */}
@@ -12,7 +12,7 @@ const Navbar = ({ isBannerRemove }) => {
           <DesktopView />
           {/* Mobile View */}
           <div className="lg:hidden w-full">
-            <MobileView isBannerRemove={isBannerRemove} />
+            <MobileView isBannerVisible={isBannerVisible} />
           </div>
         </div>
       </div>
@@ -20,4 +20,4 @@ const Navbar = ({ isBannerRemove }) => {
   );
 };
 
-export default Navbar;
+export default HeaderView;

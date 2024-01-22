@@ -4,14 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { DownCircleArrowIcon, RightArrowIcon } from "../common/icons/Home";
-const Hero = ({ isBannerRemove }) => {
+const Hero = ({ isBannerVisible }) => {
   const pathName = usePathname();
   return (
     <>
       <div
         className={`flex-grow-[1] min-h-screen bg-herobg bg-cover bg-no-repeat relative h-full flex flex-col justify-center items-center overflow-hidden ${
           pathName !== "/" && "pt-[60px]"
-        }  ${isBannerRemove ? "!pt-[60px]" : "pt-[150px]"} `}
+        }  ${isBannerVisible ? "!pt-[60px]" : "pt-[150px]"} `}
       >
         <Image
           className="absolute w-[86px] sm:w-[130px] md:w-[150px] lg:w-[176px] start-[-60px] md:start-[-55px] lg:start-[-80px]"

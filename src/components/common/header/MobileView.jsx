@@ -7,7 +7,7 @@ import { CircleCrossIcon, MenuIcon, RightArrowIcon } from "../icons/Home";
 import { navigationLinks } from "../helper/Helper";
 import { useEffect, useState } from "react";
 
-const MobileView = ({ isBannerRemove }) => {
+const MobileView = ({ isBannerVisible }) => {
   const pathName = usePathname();
   // State variable to track the visibility of the navigation bar
   const [showNavBar, setShowNavBar] = useState(false);
@@ -63,7 +63,7 @@ const MobileView = ({ isBannerRemove }) => {
         >
           <div
             className={`${
-              pathName === "/" ? (isBannerRemove ? "pt-0" : "pt-[60px]") : ""
+              pathName === "/" ? (isBannerVisible ? "pt-0" : "pt-[60px]") : ""
             } px-4 bg-midnight max-h-full pb-[50px]`}
           >
             <div className="flex flex-col items-center pt-12 md:pt-16">

@@ -3,11 +3,11 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import Navbar from "./Navbar";
 import { CircleCrossIcon } from "../icons/Home";
+import HeaderView from "./HeaderView";
 
 // Functional component named Header
-const Header = ({ isBannerRemove, setIsBannerRemove }) => {
+const Header = ({ isBannerVisible, setIsBannerVisible }) => {
   const navbarRef = useRef();
   const [prevScrollPosition, setPrevScrollPosition] = useState(0);
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
@@ -52,7 +52,7 @@ const Header = ({ isBannerRemove, setIsBannerRemove }) => {
         {pathName === "/" && (
           <div
             className={`bg-headerbg bg-curiousBlue-500 bg-no-repeat bg-cover z-[210] relative ${
-              isBannerRemove ? "hidden" : ""
+              isBannerVisible ? "hidden" : ""
             }`}
           >
             <div className="relative px-4 md:px-6 xl:px-8">
@@ -71,7 +71,7 @@ const Header = ({ isBannerRemove, setIsBannerRemove }) => {
               </div>
               {/* Close Notification Button */}
               <div
-                onClick={() => setIsBannerRemove(true)}
+                onClick={() => setIsBannerVisible(true)}
                 className="absolute cursor-pointer top-1/2 translate-y-[-50%] end-4 md:end-6 xl:end-8"
               >
                 <CircleCrossIcon />
@@ -79,7 +79,7 @@ const Header = ({ isBannerRemove, setIsBannerRemove }) => {
             </div>
           </div>
         )}
-        <Navbar isBannerRemove={isBannerRemove} />
+        <HeaderView isBannerVisible={isBannerVisible} />
       </div>
     </>
   );

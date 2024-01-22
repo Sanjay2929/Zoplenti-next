@@ -4,12 +4,12 @@ import Header from "../common/header/Header";
 import Hero from "./Hero";
 
 const HomePage = () => {
-  const [isBannerRemove, setIsBannerRemove] = useState(false);
+  const [isBannerVisible, setIsBannerVisible] = useState(false);
   return (
     <div>
       <Header
-        isBannerRemove={isBannerRemove}
-        setIsBannerRemove={setIsBannerRemove}
+        isBannerVisible={isBannerVisible}
+        setIsBannerVisible={setIsBannerVisible}
       />
       <Hero />
     </div>
