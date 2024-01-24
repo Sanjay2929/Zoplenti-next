@@ -2,7 +2,7 @@
   {
     "title": "Nicole Xie, Sales Manager",
     "description": "It's very pleasant to work with Zoplenti, they are very professional and always have quick responses to any questions during the cooperation. They are indeed a trusted partner.",
-    "image": "/assets/reviewcards/svg/insta-360-logo.svg",
+    "image": "/assets/reviewCards/svg/insta-360-logo.svg",
     "imageWidth": "80",
     "imageHeight": "31",
     "style": "w-[79px] h-[18] md:w-[80px] md:h-[31px]",
@@ -11,7 +11,7 @@
   {
     "title": "J.C Lay, Sales",
     "description": "Zoplenti continues to be a great retailer for us. Your team is great at communicating and we appreciate all you do for us and our brand on Amazon. ",
-    "image": "/assets/reviewcards/svg/heater-logo.svg",
+    "image": "/assets/reviewCards/svg/heater-logo.svg",
     "imageWidth": "83",
     "imageHeight": "27",
     "style": "w-[94px] md:w-[83px]",
@@ -20,7 +20,7 @@
   {
     "title": "Mario Nava, VP of Operations",
     "description": "Zoplenti has been a great partner and reseller for Lake Industries. Their loyalty and compliance have made them great brand ambassadors for our products. We are very fortunate to partner with Zoplenti.",
-    "image": "/assets/reviewcards/svg/lake-horizontal-logo.svg",
+    "image": "/assets/reviewCards/svg/lake-horizontal-logo.svg",
     "imageWidth": "85",
     "imageHeight": "34",
     "className": "lg:pe-3",
@@ -30,21 +30,21 @@
   {
     "title": "Chris West, CEO",
     "description": "Truly one of the best decisions I've made was bringing on Zoplenti. It is rare that a company can start from scratch and ramp up a successful sales program as quickly as they did. I'm sure they will continue to exceed my sales expectations.",
-    "image": "/assets/reviewcards/svg/solution-finsih-logo.svg",
+    "image": "/assets/reviewCards/svg/solution-finsih-logo.svg",
     "imageWidth": "74",
     "imageHeight": "32"
   },
   {
     "title": "Benjamin White, Owner",
     "description": "Zoplenti has been a long-standing trusted partner. With great communication, reliability and on time payments, Zoplenti is everything a retailer could ask for in an online partner.",
-    "image": "/assets/reviewcards/svg/golf-logo.svg",
+    "image": "/assets/reviewCards/svg/golf-logo.svg",
     "imageWidth": "80",
     "imageHeight": "28"
   },
   {
     "title": "Justin Zehrung, Vice President",
     "description": "In today’s online landscape, we have found that it is more important than ever to choose your retail partners carefully. It is imperative to work with a partner whose goals match our own. Zoplenti has proven to be that partner.",
-    "image": "/assets/reviewcards/svg/essenyial-logo.svg",
+    "image": "/assets/reviewCards/svg/essenyial-logo.svg",
     "imageWidth": "39",
     "imageHeight": "39"
   }
