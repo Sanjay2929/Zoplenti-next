@@ -34,13 +34,13 @@ const Footer = () => {
                     Quick Links
                   </p>
                   <div className="flex flex-col gap-[10px] pt-4">
-                    {navigationLinks.map((data, index) => {
+                    {navigationLinks.map((obj, i) => {
                       return (
                         <Link
-                          key={index}
-                          href={data.link}
+                          key={i}
+                          href={obj.link}
                           className="text-white hover:text-dodgerBlue duration-500 transition-all font-aeoniktrials text-sm md:text-base !leading-[170%] font-normal opacity-80">
-                          {data.title}
+                          {obj.title}
                         </Link>
                       );
                     })}
