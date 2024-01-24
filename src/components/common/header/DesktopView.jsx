@@ -2,12 +2,14 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { PeopleIcon, RightArrowIcon, ShoppingIcon } from "../icons/Home";
-import { navigationLinks } from "../helper/Helper";
+import { PeopleIcon, ShoppingIcon } from "../icons/Home";
+import navList from "../json/Navbar";
 import NavbarLogo from "../json/NavbarLogo";
+import CustomButton from "../CustomButton";
 
 const DesktopView = () => {
   const pathName = usePathname();
+  console.log("navigationLinksnavigationLinks", navList);
   return (
     <>
       <div className="items-center justify-between w-full hidden lg:flex">
@@ -16,13 +18,13 @@ const DesktopView = () => {
         </div>
         <div className="lg:flex md:gap-4 lg:gap-8 hidden">
           {/* Mapping through navigationLinks array to render navigation links */}
-          {navigationLinks.map((data, index) => (
+          {navList.map((obj, i) => (
             <Link
-              key={index}
-              href={data.link}
+              key={i}
+              href={obj.link}
               className={`text-white text-base lg:text-lg font-normal !leading-[170%] font-aeoniktrials hover:text-dodgerBlue transition-all duration-500 
-                 ${pathName === data.link ? " !text-dodgerBlue" : ""}`}>
-              {data.title}
+                 ${pathName === obj.link ? " !text-dodgerBlue" : ""}`}>
+              {obj.title}
             </Link>
           ))}
         </div>
@@ -36,20 +38,15 @@ const DesktopView = () => {
               className="flex items-center gap-[6px] md:gap-1 lg:gap-[6px] text-white font-aeoniktrials !leading-[170%] text-base lg:text-lg font-normal hover:text-dodgerBlue group transition-all duration-500">
               <ShoppingIcon /> <span>Shop</span>
             </Link>
+
             <Link
               href="https://go.zoplenti.com/login"
               className="flex text-nowrap items-center gap-[6px] md:gap-1 lg:gap-[6px] text-white font-aeoniktrials !leading-[170%] text-base lg:text-lg font-normal hover:text-dodgerBlue group transition-all duration-500">
               <PeopleIcon /> <span className="whitespace-nowrap">Sign in</span>
             </Link>
           </div>
-          <Link
-            href="/get-started"
-            className="uppercase text-nowrap group shadow-[0px_0px_11px_0px_rgba(2,_169,_247,_0.33)] text-white font-aeoniktrials font-bold text-base py-[11px] px-[13.6px] rounded bg-dodgerBlue flex items-center gap-[6px] group hover:bg-transparent border border-solid border-dodgerBlue hover:border-white transition-all duration-300 !leading-[150%] whitespace-nowrap">
-            Get started
-            <span className="group-hover:translate-x-[4px] duration-300">
-              <RightArrowIcon />
-            </span>
-          </Link>
+
+          <CustomButton title="Get started" url="/get-started" />
         </div>
       </div>
     </>

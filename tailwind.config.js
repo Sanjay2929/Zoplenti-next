@@ -44,8 +44,8 @@ module.exports = {
         // headerbg: "url('/assets/images/header/png/notification-bar-bg.png')",
         // commonbgimage: "url('/assets/images/hero/png/common-bg-image.png')",
         // footerbg: "url('/assets/images/footer/png/footer-bg.png')",
-        // corevaluebg:
-        //   "url('/assets/images/corevaluetimeline/png/bg-corevaluetimeline.png')",
+        corevaluebg:
+          "url('/assets/corevaluetimeline/png/bg-corevaluetimeline.png')",
         // threestepbg:
         //   "url('/assets/images/brandspage/threestepprocess/png/three-step-bg-process.png')",
       },
