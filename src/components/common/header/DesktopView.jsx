@@ -45,7 +45,6 @@ const DesktopView = () => {
               <PeopleIcon /> <span className="whitespace-nowrap">Sign in</span>
             </Link>
           </div>
-
           <CustomButton title="Get started" url="/get-started" />
         </div>
       </div>
