@@ -9,7 +9,6 @@ import CustomButton from "../CustomButton";
 
 const DesktopView = () => {
   const pathName = usePathname();
-  console.log("navigationLinksnavigationLinks", navList);
   return (
     <>
       <div className="items-center justify-between w-full hidden lg:flex">
