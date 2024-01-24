@@ -20,7 +20,7 @@ const Footer = () => {
                   className="w-[33px] sm:w-10 md:w-[50px]"
                   width={50}
                   height={40}
-                  src="/public/assets/common/footer/png/footer-logo.png"
+                  src="/assets/common/footer/png/footer-logo.png"
                   alt="footer-logo"
                 />
                 <span className="uppercase font-Jost text-white font-medium text-2xl md:text-[28px] tracking-[0.84px] text-shadow ">
