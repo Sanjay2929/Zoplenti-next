@@ -10,6 +10,7 @@ import PartnersList from "./../common/json/PartnersList";
 
 // import DistributorPartners from "../common/partners/DistributorPartners";
 import Brands from "../common/partners/Brands";
+import Footer from "../common/footer/Footer";
 
 const HomePage = () => {
   const [isBannerVisible, setIsBannerVisible] = useState(false);
@@ -39,6 +40,7 @@ const HomePage = () => {
       />
       <CoreValue />
       <ReviewCards />
+      <Footer />
     </div>
   );
 };
