@@ -25,6 +25,7 @@ export const metadata = {
 // Default export for the Home component
 export default function Home() {
   // Returning the Home component
+
   return (
     <>
       <HomePage />

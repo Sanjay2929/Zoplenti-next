@@ -5,7 +5,7 @@ import Hero from "./Hero";
 import RoadMap from "./RoadMap";
 import JoinZoplenti from "./JoinZoplenti";
 import CoreValue from "./CoreValues";
-import ReviewCards from "./ReviewCards";
+import ReviewCards from "../ReviewCards";
 import PartnersList from "./../common/json/PartnersList";
 
 // import DistributorPartners from "../common/partners/DistributorPartners";
