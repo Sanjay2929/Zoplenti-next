@@ -4,7 +4,7 @@
     "partnerslogo": [
       {
         "url": "/brands",
-        "order": "",
+
         "image": "/assets/partners/brandsPartners/svg/insta-360-logo.svg",
         "imageWidth": "190",
         "imageHeight": "47",
@@ -12,7 +12,7 @@
       },
       {
         "url": "/brands",
-        "order": "",
+
         "image": "/assets/partners/brandsPartners/png/elf-on-the-shelf-logo.png",
         "imageWidth": "56",
         "imageHeight": "56",
@@ -20,7 +20,7 @@
       },
       {
         "url": "/brands",
-        "order": "",
+
         "image": "/assets/partners/brandsPartners/svg/bruder-logo.svg",
         "imageWidth": "123",
         "imageHeight": "40",
@@ -28,7 +28,7 @@
       },
       {
         "url": "/brands",
-        "order": "",
+
         "image": "/assets/partners/brandsPartners/png/genepro-logo.png",
         "imageWidth": "150",
         "imageHeight": "54",
@@ -36,77 +36,67 @@
       },
       {
         "url": "/brands",
-        "order": "",
+
         "image": "/assets/partners/brandsPartners/svg/kala-logo.svg",
         "imageWidth": "114",
         "imageHeight": "51",
         "style": "max-w-[86px] sm:max-w-[84px] md:max-w-[95px] lg:max-w-[104px]"
       },
       {
-        "order": "",
         "image": "/assets/partners/brandsPartners/png/lake-logo.png",
         "imageWidth": "124",
         "imageHeight": "54",
         "style": "max-w-[72px] sm:max-w-[85px] md:max-w-[95px] lg:max-w-[124px]"
       },
       {
-        "order": "",
         "image": "/assets/partners/brandsPartners/svg/posture-pump-logo.svg",
         "imageWidth": "146",
         "imageHeight": "54",
         "style": "max-w-[86px] sm:max-w-[90px] md:max-w-[110px] lg:max-w-[146px]"
       },
       {
-        "order": "",
         "image": "/assets/partners/brandsPartners/png/icarsoft-logo.png",
         "imageWidth": "142",
         "imageHeight": "54",
         "style": "max-w-[100px] sm:max-w-[110px] md:max-w-[120px] lg:max-w-[142px]"
       },
       {
-        "order": "",
         "image": "/assets/partners/brandsPartners/png/aramith-logo.png",
         "imageWidth": "138",
         "imageHeight": "54",
         "style": "max-w-[100px] sm:max-w-[110px] md:max-w-[120px] lg:max-w-[138px]"
       },
       {
-        "order": "",
         "image": "/assets/partners/brandsPartners/png/permobil-logo.png",
         "imageWidth": "130",
         "imageHeight": "54",
         "style": "max-w-[96px] sm:max-w-[100px] md:max-w-[111px] lg:max-w-[130px]"
       },
       {
-        "order": "",
         "image": "/assets/partners/brandsPartners/png/oasis-logo.png",
         "imageWidth": "138",
         "imageHeight": "54",
         "style": "max-w-[100px] sm:max-w-[110px] md:max-w-[121px] lg:max-w-[138px]"
       },
       {
-        "order": "",
         "image": "/assets/partners/brandsPartners/png/wellgenix-logo.png",
         "imageWidth": "146",
         "imageHeight": "54",
         "style": "max-w-[93px] sm:max-w-[100px] md:max-w-[120px] lg:max-w-[146px]"
       },
       {
-        "order": "",
         "image": "/assets/partners/brandsPartners/png/solution-finish-logo.png",
         "imageWidth": "145",
         "imageHeight": "54",
         "style": "max-w-[93px] sm:max-w-[100px] md:max-w-[120px] lg:max-w-[145px]"
       },
       {
-        "order": "",
         "image": "/assets/partners/brandsPartners/png/camber-logo.png",
         "imageWidth": "145",
         "imageHeight": "54",
         "style": "max-w-[90px] md:max-w-[120px] lg:max-w-[145px]"
       },
       {
-        "order": "",
         "image": "/assets/partners/brandsPartners/svg/can-c-logo.svg",
         "imageWidth": "125",
         "imageHeight": "40",
@@ -123,8 +113,7 @@
         "image": "/assets/partners/distributorPartners/png/unfi-logo.png",
         "imageWidth": "109",
         "imageHeight": "46",
-        "style":
-          "max-w-[67px] min-[520px]:max-w-[70px] sm:max-w-[80px] md:max-w-[85px] lg:max-w-[109px]"
+        "style": "max-w-[67px] min-[520px]:max-w-[70px] sm:max-w-[80px] md:max-w-[85px] lg:max-w-[109px]"
       },
       {
         "url": "/distributors",
@@ -132,8 +121,7 @@
         "image": "/assets/partners/distributorPartners/png/lpd-music-logo.png",
         "imageWidth": "120",
         "imageHeight": "56",
-        "style":
-          "max-w-[75px] min-[520px]:max-w-[80px] sm:max-w-[90px] md:max-w-[95px] lg:max-w-[120px] mx-3 sm:mx-0"
+        "style": "max-w-[75px] min-[520px]:max-w-[80px] sm:max-w-[90px] md:max-w-[95px] lg:max-w-[120px] mx-3 sm:mx-0"
       },
       {
         "url": "/distributors",
@@ -141,8 +129,7 @@
         "image": "/assets/partners/distributorPartners/png/kehe-logo.png",
         "imageWidth": "140",
         "imageHeight": "56",
-        "style":
-          "max-w-[90px] min-[520px]:max-w-[95px] sm:max-w-[120px] md:max-w-[125px] lg:max-w-[140px]"
+        "style": "max-w-[90px] min-[520px]:max-w-[95px] sm:max-w-[120px] md:max-w-[125px] lg:max-w-[140px]"
       },
       {
         "url": "/distributors",
@@ -158,16 +145,14 @@
         "image": "/assets/partners/distributorPartners/png/acd-logo.png",
         "imageWidth": "228",
         "imageHeight": "48",
-        "style":
-          "max-w-[137px] min-[520px]:max-w-[140px] sm:max-w-[190px] md:max-w-[180px] lg:max-w-[228px]"
+        "style": "max-w-[137px] min-[520px]:max-w-[140px] sm:max-w-[190px] md:max-w-[180px] lg:max-w-[228px]"
       },
       {
         "order": "order-7 sm:order-6",
         "image": "/assets/partners/brandsPartners/svg/vg-logo.svg",
         "imageWidth": "64",
         "imageHeight": "64",
-        "style":
-          "max-w-[33px] sm:max-w-[40px] min-[700px]:max-w-[56px] md:max-w-[60px] lg:max-w-[64px]"
+        "style": "max-w-[33px] sm:max-w-[40px] min-[700px]:max-w-[56px] md:max-w-[60px] lg:max-w-[64px]"
       },
       {
         "order": "order-6 sm:order-7",

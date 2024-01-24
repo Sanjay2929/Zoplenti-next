@@ -1,18 +1,18 @@
 [
   {
-    "title": "Company",
-    "link": "/company"
-  },
-  {
     "title": "Brands",
     "link": "/brands"
+  },
+  {
+    "title": "Company",
+    "link": "/company"
   },
   {
     "title": "Distributors",
     "link": "/distributors"
   },
   {
-    "title": "Resources",
+    "title": "Work Here",
     "link": "#resources"
   }
 ]

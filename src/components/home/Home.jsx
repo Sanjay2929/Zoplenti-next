@@ -5,12 +5,12 @@ import Hero from "./Hero";
 import RoadMap from "./RoadMap";
 import JoinZoplenti from "./JoinZoplenti";
 import CoreValue from "./CoreValues";
-import ReviewCards from "../ReviewCards";
 import PartnersList from "./../common/json/PartnersList";
 
 // import DistributorPartners from "../common/partners/DistributorPartners";
 import Brands from "../common/partners/Brands";
 import Footer from "../common/footer/Footer";
+import ReviewCards from "../ReviewCards";
 
 const HomePage = () => {
   const [isBannerVisible, setIsBannerVisible] = useState(false);
