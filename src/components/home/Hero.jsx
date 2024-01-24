@@ -11,8 +11,7 @@ const Hero = ({ isBannerVisible }) => {
       <div
         className={`flex-grow-[1] min-h-screen bg-herobg bg-cover bg-no-repeat relative h-full flex flex-col justify-center items-center overflow-hidden ${
           pathName !== "/" && "pt-[60px]"
-        }  ${isBannerVisible ? "!pt-[60px]" : "pt-[150px]"} `}
-      >
+        }  ${isBannerVisible ? "!pt-[60px]" : "pt-[150px]"} `}>
         <Image
           className="absolute w-[86px] sm:w-[130px] md:w-[150px] lg:w-[176px] start-[-60px] md:start-[-55px] lg:start-[-80px]"
           height={142}
@@ -46,8 +45,7 @@ const Hero = ({ isBannerVisible }) => {
           <div className="flex gap-4 pt-10 lg:pt-12">
             <Link
               href="/brands"
-              className="uppercase text-nowrap group shadow-[0px_0px_11px_0px_rgba(2,_169,_247,_0.33)] text-white font-aeoniktrials font-bold text-base py-[11px] px-[14px] rounded bg-dodgerBlue flex items-center gap-[6px] group hover:bg-transparent border border-solid border-dodgerBlue hover:border-white transition-all duration-300 !leading-[150%]"
-            >
+              className="uppercase text-nowrap group shadow-[0px_0px_11px_0px_rgba(2,_169,_247,_0.33)] text-white font-aeoniktrials font-bold text-base py-[11px] px-[14px] rounded bg-dodgerBlue flex items-center gap-[6px] group hover:bg-transparent border border-solid border-dodgerBlue hover:border-white transition-all duration-300 !leading-[150%]">
               Brands
               <span className="group-hover:translate-x-[4px] duration-300">
                 <RightArrowIcon />
@@ -55,8 +53,7 @@ const Hero = ({ isBannerVisible }) => {
             </Link>
             <Link
               href="/distributors"
-              className="uppercase text-nowrap group shadow-[0px_0px_11px_0px_rgba(2,_169,_247,_0.33)] text-white font-aeoniktrials font-bold text-base py-[11px] px-[14px] rounded bg-dodgerBlue flex items-center gap-[6px] group hover:bg-transparent border border-solid border-dodgerBlue hover:border-white transition-all duration-300 !leading-[150%]"
-            >
+              className="uppercase text-nowrap group shadow-[0px_0px_11px_0px_rgba(2,_169,_247,_0.33)] text-white font-aeoniktrials font-bold text-base py-[11px] px-[14px] rounded bg-dodgerBlue flex items-center gap-[6px] group hover:bg-transparent border border-solid border-dodgerBlue hover:border-white transition-all duration-300 !leading-[150%]">
               Distributors
               <span className="group-hover:translate-x-[4px] duration-300">
                 <RightArrowIcon />

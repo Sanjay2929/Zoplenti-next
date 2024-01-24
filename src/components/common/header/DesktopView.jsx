@@ -21,8 +21,7 @@ const DesktopView = () => {
               key={index}
               href={data.link}
               className={`text-white text-base lg:text-lg font-normal !leading-[170%] font-aeoniktrials hover:text-dodgerBlue transition-all duration-500 
-                 ${pathName === data.link ? " !text-dodgerBlue" : ""}`}
-            >
+                 ${pathName === data.link ? " !text-dodgerBlue" : ""}`}>
               {data.title}
             </Link>
           ))}
@@ -34,21 +33,18 @@ const DesktopView = () => {
             <Link
               target="_blank"
               href="https://www.amazon.com/shops/zoplenti"
-              className="flex items-center gap-[6px] md:gap-1 lg:gap-[6px] text-white font-aeoniktrials !leading-[170%] text-base lg:text-lg font-normal hover:text-dodgerBlue group transition-all duration-500"
-            >
+              className="flex items-center gap-[6px] md:gap-1 lg:gap-[6px] text-white font-aeoniktrials !leading-[170%] text-base lg:text-lg font-normal hover:text-dodgerBlue group transition-all duration-500">
               <ShoppingIcon /> <span>Shop</span>
             </Link>
             <Link
               href="https://go.zoplenti.com/login"
-              className="flex text-nowrap items-center gap-[6px] md:gap-1 lg:gap-[6px] text-white font-aeoniktrials !leading-[170%] text-base lg:text-lg font-normal hover:text-dodgerBlue group transition-all duration-500"
-            >
+              className="flex text-nowrap items-center gap-[6px] md:gap-1 lg:gap-[6px] text-white font-aeoniktrials !leading-[170%] text-base lg:text-lg font-normal hover:text-dodgerBlue group transition-all duration-500">
               <PeopleIcon /> <span className="whitespace-nowrap">Sign in</span>
             </Link>
           </div>
           <Link
             href="/get-started"
-            className="uppercase text-nowrap group shadow-[0px_0px_11px_0px_rgba(2,_169,_247,_0.33)] text-white font-aeoniktrials font-bold text-base py-[11px] px-[13.6px] rounded bg-dodgerBlue flex items-center gap-[6px] group hover:bg-transparent border border-solid border-dodgerBlue hover:border-white transition-all duration-300 !leading-[150%] whitespace-nowrap"
-          >
+            className="uppercase text-nowrap group shadow-[0px_0px_11px_0px_rgba(2,_169,_247,_0.33)] text-white font-aeoniktrials font-bold text-base py-[11px] px-[13.6px] rounded bg-dodgerBlue flex items-center gap-[6px] group hover:bg-transparent border border-solid border-dodgerBlue hover:border-white transition-all duration-300 !leading-[150%] whitespace-nowrap">
             Get started
             <span className="group-hover:translate-x-[4px] duration-300">
               <RightArrowIcon />
