@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { CircleCrossIcon, MenuIcon, RightArrowIcon } from "../icons/Home";
 // import { navigationLinks } from "../helper/Helper";
 import { useEffect, useState } from "react";
-import PageLogo from "./PageLogo";
+import Logo from "./Logo";
 // MobileView component
 const MobileView = ({ isBannerVisible }) => {
   // Get the current pathname using Next.js hook
@@ -31,7 +31,7 @@ const MobileView = ({ isBannerVisible }) => {
       <div className="flex justify-between items-center w-full">
         <div className="z-[200] h-[67px]">
           {/* Render the NavbarLogo component */}
-          <PageLogo />
+          <Logo />
         </div>
         <div className="flex items-center">
           {/* Hamburger menu icon for mobile navigation */}

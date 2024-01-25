@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 // NavbarLogo component for displaying a logo in the navigation bar
-const NavbarLogo = () => {
+const Logo = () => {
   // State to store the lottie library reference
   const [lottieLibrary, setLottieLibrary] = useState(null);
 
@@ -66,4 +66,4 @@ const NavbarLogo = () => {
   );
 };
 
-export default NavbarLogo;
+export default Logo;

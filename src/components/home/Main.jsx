@@ -15,7 +15,7 @@ import ReviewCards from "../common/ReviewCards";
 const Main = () => {
   const [isBannerVisible, setIsBannerVisible] = useState(false);
   return (
-    <div className="bg-midnight overflow-auto">
+    <div className="bg-midnight ">
       <Header
         isBannerVisible={isBannerVisible}
         setIsBannerVisible={setIsBannerVisible}
