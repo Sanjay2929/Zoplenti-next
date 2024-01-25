@@ -4,8 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { PeopleIcon, ShoppingIcon } from "../icons/Home";
 import navList from "../json/Navbar";
-import NavbarLogo from "../json/NavbarLogo";
 import CustomButton from "../CustomButton";
+import NavbarLogo from "./NavbarLogo";
 
 const DesktopView = () => {
   const pathName = usePathname();
