@@ -23,22 +23,13 @@ const Header = ({ isBannerVisible, setIsBannerVisible }) => {
       const currentScrollPosition = window.scrollY;
       let visibleHeader = isHeaderVisible;
       // Check if the user has scrolled more than 150 pixels
-      // if (currentScrollPosition > 150) {
-      //   // Determine if the user is scrolling up or down
-      //   visibleHeader = prevScrollPosition > currentScrollPosition;
-      //   document.body.classList.remove("show-scrollbar");
-      //   document.body.classList.add("hide-scrollbar");
-      // }
-      // // Update the state with the current scroll position and header visibility
-      // setPrevScrollPosition(currentScrollPosition);
-      // setIsHeaderVisible(visibleHeader);
-      // if (currentScrollPosition >= 10) {
-      //   document.body.classList.add("show-scrollbar");
-      //   document.body.classList.remove("hide-scrollbar");
-      // } else {
-      //   document.body.classList.remove("show-scrollbar");
-      //   document.body.classList.add("hide-scrollbar");
-      // }
+      if (currentScrollPosition > 150) {
+        // Determine if the user is scrolling up or down
+        visibleHeader = prevScrollPosition > currentScrollPosition;
+      }
+      // Update the state with the current scroll position and header visibility
+      setPrevScrollPosition(currentScrollPosition);
+      setIsHeaderVisible(visibleHeader);
     };
     // Add scroll event listener when the component mounts
     window.addEventListener("scroll", handleScroll);
