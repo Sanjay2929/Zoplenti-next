@@ -13,7 +13,7 @@ const Header = ({ isBannerVisible, setIsBannerVisible }) => {
   // State to store the previous scroll position
   const [prevScrollPosition, setPrevScrollPosition] = useState(0);
   // State to determine if the header is visible
-  const [isHeaderVisible, setIsHeaderVisible] = useState(false);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
   // Get the current pathname using a custom hook (replace with actual hook)
   const pathName = usePathname();
   // Effect for handling scroll events
