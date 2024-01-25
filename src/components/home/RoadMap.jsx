@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-
 const RoadMap = () => {
   return (
     <>
@@ -11,7 +10,7 @@ const RoadMap = () => {
           width={84}
           className="sticky hidden md:flex z-10 start-4 md:top-[45vh] md:left-[50%] md:translate-x-[-50%] lg:w-[88px] min-[880px]:w-[74px] min-[946px]:w-[70px] min-[1200px]:w-[88px] min-[1280px]:w-[90px]"
           height={90}
-          src="/assets/roadmap/svg/logo-time-line.svg"
+          src="/assets/images/roadmap/svg/logo-time-line.svg"
           alt="time line"
         />
         {/* Background Image for Desktop View */}
@@ -19,7 +18,7 @@ const RoadMap = () => {
           className="hidden md:flex md:h-[91%] md:mt-[-130px] lg:mt-[-160px] absolute left-4 md:left-[50%] md:translate-x-[-50%]"
           width={100}
           height={1102}
-          src="/assets/roadmap/svg/time-line-image.svg"
+          src="/assets/images/roadmap/svg/time-line-image.svg"
           alt="time line"
         />
         <div className="flex flex-col items-end md:items-start md:mt-[-92px] md:flex-row md:justify-between w-full">
@@ -39,14 +38,14 @@ const RoadMap = () => {
               className="md:hidden absolute top-[3%] start-0 h-full sm:w-[60px]"
               width={43}
               height={806}
-              src="/assets/roadmap/svg/mobile-time-line.svg"
+              src="/assets/images/roadmap/svg/mobile-time-line.svg"
               alt="time line"
             />
             <Image
               width={39}
               className="sticky md:hidden mb-[40px] md:mb-0 z-10 ms-[-73px] sm:ms-[-60px] min-[440px]:w-[33px]  min-[550px]:w-[27px] min-[550px]:ms-[-67px] min-[440px]:ms-[-70px] mt-[-39px] top-[20%] translate-y-[40px] sm:min-w-[30px]"
               height={39}
-              src="/assets/roadmap/svg/mobile-logo-time-line.svg"
+              src="/assets/images/roadmap/svg/mobile-logo-time-line.svg"
               alt="time line"
             />
             <div className="mt-[-40px] md:mt-0">
@@ -86,5 +85,4 @@ const RoadMap = () => {
     </>
   );
 };
-
 export default RoadMap;

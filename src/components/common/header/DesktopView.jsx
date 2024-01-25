@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { PeopleIcon, ShoppingIcon } from "../icons/Home";
 import navList from "../json/Navbar";
 import CustomButton from "../CustomButton";
-import NavbarLogo from "./NavbarLogo";
+import PageLogo from "./PageLogo";
 
 // Define the DesktopView component
 const DesktopView = () => {
@@ -18,7 +18,7 @@ const DesktopView = () => {
       <div className="items-center justify-between w-full hidden lg:flex">
         {/* Logo section */}
         <div className="min-[1200px]:w-[332px] lg:w-[180px] flex items-start">
-          <NavbarLogo />
+          <PageLogo />
         </div>
 
         {/* Navigation links section */}
