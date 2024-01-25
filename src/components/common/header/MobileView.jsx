@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import NavbarLogo from "../json/NavbarLogo";
 import { CircleCrossIcon, MenuIcon, RightArrowIcon } from "../icons/Home";
 // import { navigationLinks } from "../helper/Helper";
 import { useEffect, useState } from "react";
+import NavbarLogo from "./NavbarLogo";
 
 const MobileView = ({ isBannerVisible }) => {
   const pathName = usePathname();
@@ -34,8 +34,7 @@ const MobileView = ({ isBannerVisible }) => {
             onClick={() => setShowNavBar(true)}
             className={`${
               showNavBar ? "hidden" : ""
-            } cursor-pointer h-7 flex items-center gap-1`}
-          >
+            } cursor-pointer h-7 flex items-center gap-1`}>
             <MenuIcon />
             <span className="text-white font-aeoniktrials font-normal text-base hidden sm:flex">
               Menu
@@ -46,8 +45,7 @@ const MobileView = ({ isBannerVisible }) => {
             onClick={() => setShowNavBar(false)}
             className={`${
               showNavBar ? "block" : "hidden"
-            } ms-2 flex items-center z-[210]`}
-          >
+            } ms-2 flex items-center z-[210]`}>
             <div className="cursor-pointer flex items-center gap-1">
               <CircleCrossIcon />
             </div>
@@ -59,13 +57,11 @@ const MobileView = ({ isBannerVisible }) => {
             showNavBar
               ? "start-0 min-h-screen top-0 z-50 "
               : "top-[-500px] w-full z-[-100] start-0"
-          }`}
-        >
+          }`}>
           <div
             className={`${
               pathName === "/" ? (isBannerVisible ? "pt-0" : "pt-[60px]") : ""
-            } px-4 bg-midnight max-h-full pb-[50px]`}
-          >
+            } px-4 bg-midnight max-h-full pb-[50px]`}>
             <div className="flex flex-col items-center pt-12 md:pt-16">
               {/* Navigation links container with specified gaps for different screen sizes */}
               {/* {navigationLinks.map((data, index) => {
