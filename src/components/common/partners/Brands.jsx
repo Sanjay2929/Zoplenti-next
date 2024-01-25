@@ -65,7 +65,7 @@ const Brands = ({
                                     height={obj.imageHeight}
                                     width={obj.imageWidth}
                                     src={obj.image}
-                                    alt="image"
+                                    alt="card"
                                     quality={100}
                                   />
                                 </Link>
@@ -83,7 +83,7 @@ const Brands = ({
                     return (
                       <div
                         key={i}
-                        className={`flex items-center lg:justify-center ${obj.order}`}>
+                        className={`flex items-center lg:justify-center`}>
                         {/* Display brand logos */}
                         <Image
                           className={`${obj.style} hover:scale-[1.05] transition-all duration-700`}
