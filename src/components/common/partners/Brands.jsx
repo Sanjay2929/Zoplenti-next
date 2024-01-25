@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// Brands component that displays partner logos
 const Brands = ({
-  brands,
-  show,
-  hidden,
-  translate_remove,
-  margin_bottom,
-  padding_top,
+  brands, // Array of brand objects containing title, partners logos, and styles
+  show, // Determines whether to display all logos or specific ones
+  hidden, // CSS class for hiding the background image
+  translate_remove, // CSS class for removing translation
+  margin_bottom, // CSS class for controlling margin bottom
+  padding_top, // CSS class for controlling padding top
 }) => {
   return (
     <>
@@ -31,7 +32,7 @@ const Brands = ({
               width={300}
               height={247}
               src="/assets/partners/brandsPartners/svg/z-logo-gradient.svg"
-              alt="logo gradian image"
+              alt="logo gradient image"
             />
             <Image
               className="hidden lg:flex absolute start-1/2 top-1/2 translate-y-[-50%] translate-x-[-50%]"
@@ -49,9 +50,11 @@ const Brands = ({
                   {brands.map((obj, i) => {
                     return (
                       <div key={i}>
+                        {/* Display partner title */}
                         <p className="text-alto uppercase opacity-50 font-aeoniktrials font-normal text-sm md:text-base !leading-[115%] pb-6 md:pb-7">
                           {obj.title}
                         </p>
+                        {/* Display partner logos */}
                         <div className="flex flex-auto flex-wrap sm:justify-between xl:gap-x-12 lg:gap-x-7 gap-y-6 sm:gap-y-8 md:gap-y-10 lg:gap-y-[46px] gap-x-5 md:gap-x-9">
                           {obj.partnerslogo &&
                             obj.partnerslogo.slice(0, 5).map((obj, i) => (
@@ -81,6 +84,7 @@ const Brands = ({
                       <div
                         key={i}
                         className={`flex items-center lg:justify-center ${obj.order}`}>
+                        {/* Display brand logos */}
                         <Image
                           className={`${obj.style} hover:scale-[1.05] transition-all duration-700`}
                           height={obj.imageHeight}
