@@ -147,7 +147,6 @@
 
   .layer_bg_start {
     /* background: linear-gradient(90deg, #000c24 0%, rgba(0, 12, 36, 0) 100%); */
-    /* Apply tailwind css  */
     @apply bg-[linear-gradient(90deg,#000c24_0%,rgba(0,12,36,0)100%)];
   }
 
@@ -165,9 +164,7 @@
       ),
       url("/assets/images/hero/webp/common-hero-bg.webp"),
       lightgray 0px -394.547px / 100% 180.961% no-repeat;
-    /* background-blend-mode: normal, color, normal; */
-    /* background-position: bottom; */
-    /* Apply tailwind css  */
+
     @apply bg-bottom bg-blend-normal bg-blend-color bg-blend-normal;
   }
 
@@ -184,7 +181,6 @@
   option:hover {
     @apply !bg-[#000c24];
   }
-
   .animate_wave {
     animation: wave_bounce 700ms ease-in-out infinite alternate;
   }
@@ -217,7 +213,6 @@
   ::selection {
     @apply text-[#00a2ff] bg-[#011b29];
   }
-
   /* For older browsers that don't support ::selection */
   ::-moz-selection {
     @apply text-[#33b6ff] bg-[#011b29];
