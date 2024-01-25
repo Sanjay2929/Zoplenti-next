@@ -17,7 +17,7 @@ const Brands = ({
         id="brand"
         className={`w-full relative sm:translate-y-[-80px] translate-y-[-40px] ${translate_remove}`}>
         <Image
-          src="/assets/partners/brandsPartners/svg/layer-bg-image.svg"
+          src="/assets/images/partners/brandsPartners/svg/layer-bg-image.svg"
           height={332}
           width={1440}
           className={`absolute min-h-[200px] top-[-20%] lg:top-[-200px] xl:top-[-226px] start-0 w-full ${hidden}`}
@@ -31,14 +31,14 @@ const Brands = ({
               className="hidden lg:flex absolute start-1/2 top-[66px] translate-x-[-50%]"
               width={300}
               height={247}
-              src="/assets/partners/brandsPartners/svg/z-logo-gradient.svg"
+              src="/assets/images/partners/brandsPartners/svg/z-logo-gradient.svg"
               alt="logo gradient image"
             />
             <Image
               className="hidden lg:flex absolute start-1/2 top-1/2 translate-y-[-50%] translate-x-[-50%]"
               width={280}
               height={280}
-              src="/assets/partners/brandsPartners/svg/circle-blur.svg"
+              src="/assets/images/partners/brandsPartners/svg/circle-blur.svg"
               alt="blur circle image"
             />
             {/* Content */}

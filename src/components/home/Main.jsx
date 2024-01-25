@@ -10,12 +10,12 @@ import PartnersList from "./../common/json/PartnersList";
 // import DistributorPartners from "../common/partners/DistributorPartners";
 import Brands from "../common/partners/Brands";
 import Footer from "../common/footer/Footer";
-import ReviewCards from "../ReviewCards";
+import ReviewCards from "../common/ReviewCards";
 
-const HomePage = () => {
+const Main = () => {
   const [isBannerVisible, setIsBannerVisible] = useState(false);
   return (
-    <div className="bg-midnight">
+    <div className="bg-midnight overflow-auto">
       <Header
         isBannerVisible={isBannerVisible}
         setIsBannerVisible={setIsBannerVisible}
@@ -45,4 +45,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Main;

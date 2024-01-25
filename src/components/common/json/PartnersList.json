@@ -5,7 +5,7 @@
       {
         "url": "/brands",
 
-        "image": "/assets/partners/brandsPartners/svg/insta-360-logo.svg",
+        "image": "/assets/images/partners/brandsPartners/svg/insta-360-logo.svg",
         "imageWidth": "190",
         "imageHeight": "47",
         "style": "max-w-[120px] sm:max-w-[161px] md:max-w-[190px]"
@@ -21,7 +21,7 @@
       {
         "url": "/brands",
 
-        "image": "/assets/partners/brandsPartners/svg/bruder-logo.svg",
+        "image": "/assets/images/partners/brandsPartners/svg/bruder-logo.svg",
         "imageWidth": "123",
         "imageHeight": "40",
         "style": "max-w-[83px] sm:max-w-[115px] lg:max-w-[123px]"
@@ -37,7 +37,7 @@
       {
         "url": "/brands",
 
-        "image": "/assets/partners/brandsPartners/svg/kala-logo.svg",
+        "image": "/assets/images/partners/brandsPartners/svg/kala-logo.svg",
         "imageWidth": "114",
         "imageHeight": "51",
         "style": "max-w-[86px] sm:max-w-[84px] md:max-w-[95px] lg:max-w-[104px]"

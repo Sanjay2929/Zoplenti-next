@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import clientReviews from "./common/json/ReviewCards";
+import clientReviews from "./json/ReviewCards";
 
 const ReviewCards = () => {
   return (
@@ -21,7 +21,7 @@ const ReviewCards = () => {
                       width={34}
                       className="mt-1 w-[27px] md:w-[34px]"
                       height="25"
-                      src="/assets/reviewcards/svg/comment-logo.svg"
+                      src="/assets/images/reviewCards/svg/comment-logo.svg"
                       alt="comment logo"
                     />
                     {/* Comment Title and Image */}
