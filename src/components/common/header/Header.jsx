@@ -48,8 +48,8 @@ const Header = ({ isBannerVisible, setIsBannerVisible }) => {
           prevScrollPosition ? "slideDown" : "slideUp"
         } ${
           isHeaderVisible
-            ? "-translate-y-full slideDown"
-            : " translate-y-0 slideUp"
+            ? " translate-y-0 slideUp"
+            : "-translate-y-full slideDown"
         }`}>
         {/* Notification Banner */}
 

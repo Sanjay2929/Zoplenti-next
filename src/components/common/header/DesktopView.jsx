@@ -7,29 +7,37 @@ import navList from "../json/Navbar";
 import CustomButton from "../CustomButton";
 import NavbarLogo from "./NavbarLogo";
 
+// Define the DesktopView component
 const DesktopView = () => {
-  const pathName = usePathname();
+  // Get the current pathname using usePathname hook
+  const currentPath = usePathname();
+
   return (
     <>
+      {/* Desktop navigation bar layout */}
       <div className="items-center justify-between w-full hidden lg:flex">
+        {/* Logo section */}
         <div className="min-[1200px]:w-[332px] lg:w-[180px] flex items-start">
           <NavbarLogo />
         </div>
+
+        {/* Navigation links section */}
         <div className="lg:flex md:gap-4 lg:gap-8 hidden">
           {/* Mapping through navigationLinks array to render navigation links */}
-          {navList.map((obj, i) => (
+          {navList.map((navItem, index) => (
             <Link
-              key={i}
-              href={obj.link}
+              key={index}
+              href={navItem.link}
               className={`text-white text-base lg:text-lg font-normal !leading-[170%] font-aeoniktrials hover:text-dodgerBlue transition-all duration-500 
-                 ${pathName === obj.link ? " !text-dodgerBlue" : ""}`}>
-              {obj.title}
+                 ${currentPath === navItem.link ? " !text-dodgerBlue" : ""}`}>
+              {navItem.title}
             </Link>
           ))}
         </div>
 
         {/* Additional links container with specified gaps for different screen sizes */}
         <div className="lg:flex items-center justify-between lg:justify-end md:gap-4 lg:gap-5 h-full hidden flex-1 lg:flex-grow-0 lg:w-[332px] ms-3 min-[800px]:ms-8 lg:ms-0">
+          {/* Shop and Sign in links */}
           <div className="flex gap-[14px]">
             <Link
               target="_blank"
@@ -44,6 +52,8 @@ const DesktopView = () => {
               <PeopleIcon /> <span className="whitespace-nowrap">Sign in</span>
             </Link>
           </div>
+
+          {/* Get started button */}
           <CustomButton title="Get started" url="/get-started" />
         </div>
       </div>
