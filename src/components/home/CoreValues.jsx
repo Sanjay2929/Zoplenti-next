@@ -14,21 +14,21 @@ const CoreValue = () => {
           height={113}
           className="absolute start-0 top-[19%] sm:hidden"
           alt="mobile view"
-          src="/assets/images/corevaluetimeline/png/mobile-bg-corevaluetimeline.png"
+          src="/assets/images/coreValue/png/mobile-bg-corevaluetimeline.png"
         />
         <Image
           width={640}
           height={113}
           className="absolute start-0 top-[45%] sm:hidden"
           alt="mobile view"
-          src="/assets/images/corevaluetimeline/png/mobile-bg-corevaluetimeline.png"
+          src="/assets/images/coreValue/png/mobile-bg-corevaluetimeline.png"
         />
         <Image
           width={640}
           height={113}
           className="absolute start-0 top-[71%] sm:hidden"
           alt="mobile view"
-          src="/assets/images/corevaluetimeline/png/mobile-bg-corevaluetimeline.png"
+          src="/assets/images/coreValue/png/mobile-bg-corevaluetimeline.png"
         />
         {/* Container for Content */}
         <div className="container md:px-12 sm:px-8 xl:px-3 max-w-[1140px] px-4 mx-auto relative z-10">
