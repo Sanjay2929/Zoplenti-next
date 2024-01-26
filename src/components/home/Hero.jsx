@@ -71,4 +71,3 @@ const Hero = ({ isBannerVisible }) => {
 
 // Export the Hero component as the default export
 export default Hero;
-  

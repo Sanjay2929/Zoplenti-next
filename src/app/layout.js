@@ -1,3 +1,4 @@
+import ScrollTop from "@/components/common/ScrollToTop";
 import "./globals.css";
 
 export const metadata = {
@@ -31,7 +32,10 @@ export default function RootLayout({ children }) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <ScrollTop />
+      </body>
     </html>
   );
 }

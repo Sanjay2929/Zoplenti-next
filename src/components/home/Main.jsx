@@ -11,11 +11,14 @@ import PartnersList from "./../common/json/PartnersList";
 import Brands from "../common/partners/Brands";
 import Footer from "../common/footer/Footer";
 import ReviewCards from "../common/ReviewCards";
+import CustomScrollBar from "../common/CustomScrollBar";
 
 const Main = () => {
   const [isBannerVisible, setIsBannerVisible] = useState(false);
   return (
     <div className="bg-midnight ">
+      <CustomScrollBar />
+
       <Header
         isBannerVisible={isBannerVisible}
         setIsBannerVisible={setIsBannerVisible}
