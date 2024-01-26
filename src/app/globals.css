@@ -156,16 +156,23 @@
 
   .common_hero_layer {
     /* for linear grident with  image  */
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -110.43%, #000c24 100%),
+
+    background: linear-gradient(180deg, transparent -110.43%, #000c24),
+      linear-gradient(0deg, rgba(51, 182, 255, 0.5), rgba(51, 182, 255, 0.5)),
+      url(/assets/images/common/webp/common-hero-bg.webp),
+      #d3d3d3 0 -394.547px /100% 180.961% no-repeat;
+    background-blend-mode: normal, color, normal;
+    background-position: bottom;
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) -110.43%, #000c24 100%),
       linear-gradient(
         0deg,
         rgba(51, 182, 255, 0.5) 0%,
         rgba(51, 182, 255, 0.5) 100%
       ),
-      url("/assets/images/hero/webp/common-hero-bg.webp"),
+      url(/assets/images/common/webp/common-hero-bg.webp),
       lightgray 0px -394.547px / 100% 180.961% no-repeat;
-
-    @apply bg-bottom bg-blend-normal bg-blend-color bg-blend-normal;
+    background-position: bottom;
+    background-blend-mode: normal color normal; */
   }
 
   .navbar_bulr {
