@@ -5,6 +5,7 @@ import PartnersList from "./../common/json/PartnersList";
 import Brands from "../common/partners/Brands";
 import Footer from "../common/footer/Footer";
 import Hero from "../common/Hero";
+import AmazonSeller from "./AmazonSeller";
 
 const Main = () => {
     const brandsPartners = PartnersList[0].partnerslogo;
@@ -24,6 +25,7 @@ const Main = () => {
             {/*  */}
             <Brands
                 hidden="hidden" brands={brandsPartners} show="brands" translate_remove="!translate-y-0" containerStyle="mb-0" padding_top="md:pt-[86px]" />
+            <AmazonSeller />
             <Footer />
         </div>
     );
