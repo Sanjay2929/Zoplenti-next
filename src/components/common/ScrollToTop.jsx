@@ -4,13 +4,14 @@ import { useState, useEffect } from "react";
 
 const ScrollTop = () => {
   const [scrollValue, setScrollValue] = useState(0);
-  const [scrollTop, setScrollTop] = useState(false); // Add state for scrollTop
+  const [showScrollTop, setShowScrollTop] = useState(false); // Rename state to showScrollTop
 
   useEffect(() => {
     const handleScroll = () => {
       // Update the scroll value when the user scrolls
       setScrollValue(window.scrollY);
     };
+
     // Add event listener when component mounts
     window.addEventListener("scroll", handleScroll);
 
@@ -20,12 +21,12 @@ const ScrollTop = () => {
     };
   }, []); // Empty dependency array ensures this effect runs only once on mount
 
-  // Update scrollTop based on scrollValue
+  // Update showScrollTop based on scrollValue
   useEffect(() => {
     if (scrollValue > 200) {
-      setScrollTop(true);
+      setShowScrollTop(true);
     } else {
-      setScrollTop(false);
+      setShowScrollTop(false);
     }
   }, [scrollValue]);
 
@@ -38,11 +39,13 @@ const ScrollTop = () => {
 
   return (
     <>
-      {/* Render "Back to Top" button when scrollTop state is true */}
+      {/* Render "Back to Top" button when showScrollTop state is true */}
       <>
         <div
           className={`end-[2%] bottom-[2%] border-0 fixed z-[200] transition-all duration-300 ${
-            scrollTop ? "scale-100 translate-y-0" : "scale-0 translate-y-[40px]"
+            showScrollTop
+              ? "scale-100 translate-y-0"
+              : "scale-0 translate-y-[40px]"
           }`}>
           {/* Back to Top button */}
           <div

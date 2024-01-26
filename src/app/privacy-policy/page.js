@@ -1,9 +1,8 @@
-import React from 'react'
+import Main from "@/components/privacyPolicy/Main";
+import React from "react";
 
 const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+  return <Main />;
+};
 
-export default page
+export default page;
