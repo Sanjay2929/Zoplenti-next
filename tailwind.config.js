@@ -38,7 +38,6 @@ module.exports = {
         tealishBlue: "#081735",
         deepCove: "#051D39",
         balckLight: "#303A4E",
-
         whiteGradient: "linear-gradient(180deg, #02A9F7 0%, #2262BC 116.35%)",
       },
       backgroundImage: {
