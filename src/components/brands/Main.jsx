@@ -8,6 +8,7 @@ import Hero from "../common/Hero";
 import AmazonSeller from "./AmazonSeller";
 import OpportunitiesCatalog from "./OpportunitiesCatalog";
 import JoinZoplenti from "../common/JoinZoplenti";
+import AmazonResult from "./AmazonResult";
 
 const Main = () => {
     const brandsPartners = PartnersList[0].partnerslogo;
@@ -25,6 +26,7 @@ const Main = () => {
             <AmazonSeller />
             <JoinZoplenti description="We're looking for select brands who share our vision and are ready to dominate together. "
                 url="/get-started" buttonHidden="hidden" title="Get Started" />
+            <AmazonResult />
             <OpportunitiesCatalog maxWidth="max-w-[1024px]" title="Our Opportunity Finder algorithm pushes your products to the top "
                 description={[
                     "We developed a custom analysis process to find the right levers to move for your brand, pouring in all the collective experience of the best & brightest people in the Amazon business.",

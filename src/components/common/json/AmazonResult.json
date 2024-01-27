@@ -1,0 +1,39 @@
+[
+  {
+    "icon": "<OrderShoppingIcon />",
+    "description": "Consistent wholesale orders"
+  },
+  {
+    "icon": "<MaterailIcon />",
+    "description": "Dedicated account manager"
+  },
+  {
+    "icon": "<HappyFaceIcon />",
+    "description": "Flawless customer service",
+    "descriptionStyle": "md:!max-w-[192px] !max-w-[140px]"
+  },
+  {
+    "icon": "<SharpMapIcon />",
+    "description": "MAP compliance",
+    "descriptionStyle": "md:!max-w-[153px] !max-w-[116px]"
+  },
+  {
+    "icon": "<ListingGrowthIcon />",
+    "description": "Listing & keyword optimization"
+  },
+  {
+    "icon": "<GrowthIcon />",
+    "description": "Growth marketing",
+    "descriptionStyle": "md:!max-w-[192px] !max-w-[120px]"
+  },
+  {
+    "icon":" <AmazonIcon />",
+    "description": "Amazon advertising",
+    "descriptionStyle": "md:!max-w-[192px] !max-w-[140px]"
+  },
+  {
+    "icon": "<MonitoringIcon />",
+    "description": "Automated MAP monitoring",
+    "descriptionStyle": "!max-w-[173px]"
+  }
+]
