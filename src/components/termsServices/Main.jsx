@@ -9,7 +9,6 @@ const Main = () => {
   return (
     <>
       <div className="bg-midnight">
-        {/* <ScrollTop /> */}
         <Header />
         <Hero
           title={[

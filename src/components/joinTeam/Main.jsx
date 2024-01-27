@@ -4,7 +4,6 @@ import Footer from "../common/footer/Footer";
 import Header from "./Hero";
 import JoinTeam from "./JoinTeam";
 import { Steps } from "./Steps";
-import HeaderView from "../common/header/HeaderView";
 import CustomScrollBar from "../common/CustomScrollBar";
 
 export const Main = () => {

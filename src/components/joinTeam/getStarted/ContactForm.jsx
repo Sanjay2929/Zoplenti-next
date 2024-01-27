@@ -8,7 +8,7 @@ import CustomSuccessPopup from "@/components/common/CustomSuccessPopup";
 
 const ContactForm = () => {
   const [selectedRadio, setSelectedRadio] = useState("brand");
-  const [joinFamilyDetails, setJoinFamilyDetails] = useState({
+  const staticData = {
     firstName: "",
     lastName: "",
     email: "",
@@ -18,7 +18,8 @@ const ContactForm = () => {
     typeOfCompan: "",
     aboutUs: "",
     comment: "",
-  });
+  };
+  const [joinFamilyDetails, setJoinFamilyDetails] = useState(staticData);
   const [loading, setLoading] = useState(false);
   // POPUP ON SUBMIT FORM
   const [successPopup, setSuccessPopup] = useState(false);
@@ -30,9 +31,9 @@ const ContactForm = () => {
   const formatPhoneNumber = (input) => {
     // Remove non-numeric characters
     const cleaned = input.replace(/\D/g, "");
-    const truncted = cleaned.slice(0, 10);
+    const truncated = cleaned.slice(0, 10);
     // Apply phone number format
-    const match = truncted.match(/^(\d{3})(\d{3})(\d{4})$/);
+    const match = truncated.match(/^(\d{3})(\d{3})(\d{4})$/);
     if (match) {
       setJoinFamilyDetails({
         ...joinFamilyDetails,
