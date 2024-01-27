@@ -6,6 +6,9 @@ import { CircleCrossIcon, MenuIcon, RightArrowIcon } from "../icons/Home";
 // import { navigationLinks } from "../helper/Helper";
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
+import CustomButton from "../CustomButton";
+import navList from "../json/Header";
+
 // MobileView component
 const MobileView = ({ isBannerVisible }) => {
   // Get the current pathname using Next.js hook
@@ -72,19 +75,27 @@ const MobileView = ({ isBannerVisible }) => {
                 : ""
             } px-4 bg-midnight max-h-full pb-[50px]`}>
             <div className="flex flex-col items-center pt-12 md:pt-16">
-              {/* Content within the navigation bar */}
+              {/* Navigation links container with specified gaps for different screen sizes */}
+              {navList.map((obj, i) => {
+                return (
+                  <div
+                    key={i}
+                    className="flex justify-center mt-[18px] border-b-[0.5px] border-paleSky w-full">
+                    <Link
+                      onClick={() => setShowNavBar(false)}
+                      href={obj.link}
+                      className={`text-white py-3 text-xl font-normal !leading-[170%] font-aeoniktrials hover:text-dodgerBlue transition-all duration-500 ${
+                        currentPathname === obj.link ? " !text-dodgerBlue" : ""
+                      }`}>
+                      {obj.title}
+                    </Link>
+                  </div>
+                );
+              })}
             </div>
             {/* Additional links container with specified gaps for different screen sizes */}
             <div className="flex flex-col items-center gap-6 pt-8">
-              <Link
-                onClick={() => setNavigationBarVisibility(false)}
-                href="/get-started"
-                className="uppercase text-nowrap group shadow-[0px_0px_11px_0px_rgba(2,_169,_247,_0.33)] text-white font-aeoniktrials font-bold text-base py-[11px] px-[13.6px] rounded bg-dodgerBlue flex items-center gap-[6px] group hover:bg-transparent border border-solid border-dodgerBlue hover:border-white transition-all duration-300 !leading-[150%] w-full sm:w-1/2 justify-center">
-                Get started{" "}
-                <span className="group-hover:translate-x-[4px] duration-300">
-                  <RightArrowIcon />
-                </span>
-              </Link>
+              <CustomButton title="Get started" url="/get-started" />
             </div>
           </div>
         </div>

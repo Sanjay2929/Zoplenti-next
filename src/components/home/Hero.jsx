@@ -59,7 +59,7 @@ const Hero = ({ isBannerVisible }) => {
           {/* Scroll down arrow */}
           <div className="min-h-[88px] flex items-end">
             {/* Link to scroll smoothly to the specified section */}
-            <Link href="#brand" className="scroll-smooth updown">
+            <Link href="#brand" className="scroll-smooth animate-move-y">
               <DownCircleArrowIcon />
             </Link>
           </div>
