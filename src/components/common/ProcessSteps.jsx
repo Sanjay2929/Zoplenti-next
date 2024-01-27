@@ -8,7 +8,7 @@ const ProcessSteps = (props) => {
       <div
         className={`container md:px-12 xl:px-3 sm:px-8 max-w-[1140px] relative z-10 px-4 mx-auto overflow-hidden ${props.containerStyle} `}>
         {/* Desktop image for the step process */}
-        <Image
+        {/* <Image
           className={`absolute start-[-10px] hidden md:flex md:top-[2%] md:left-[-3%] ${props.hiddenImage}`}
           height={728}
           width={500}
@@ -21,15 +21,15 @@ const ProcessSteps = (props) => {
           width={500}
           src="/assets/images/brandspage/threestepprocess/png/desktop-three-step-process-image.png"
           alt="image"
-        />
+        /> */}
         {/* Mobile image for the step process */}
-        <Image
+        {/* <Image
           className={`absolute start-0 md:hidden sm:start-[10%] top-[50%] translate-y-[-40%] scale-[1.5] ${props.hiddenImage}`}
           height={728}
           width={365}
           src="/assets/images/brandspage/threestepprocess/png/mobile-three-step-process.png"
           alt="image"
-        />
+        /> */}
         {/* Content for the step process */}
         <div
           className={`py-[60px] relative z-20 sm:py-20 md:py-[100px] lg:py-[120px] ${props.borderStyle}`}>
@@ -68,21 +68,21 @@ const ProcessSteps = (props) => {
                         ">
               <Image
                 className="absolute top-[-4px] md:hidden"
-                src="/assets/images/brandspage/threestepprocess/svg/circle-gradient.svg"
+                src="/assets/images/common/svg/circle-gradient.svg"
                 alt="image"
                 height={8}
                 width={8}
               />
               <Image
                 className="absolute bottom-[-4px] md:end-[-4px] hidden md:flex"
-                src="/assets/images/brandspage/threestepprocess/svg/circle-gradient.svg"
+                src="/assets/images/common/svg/circle-gradient.svg"
                 alt="image"
                 height={8}
                 width={8}
               />
               <Image
                 className="absolute bottom-[-4px] md:start-[-4px]"
-                src="/assets/images/brandspage/threestepprocess/svg/circle-gradient.svg"
+                src="/assets/images/common/svg/circle-gradient.svg"
                 alt="image"
                 height={8}
                 width={8}

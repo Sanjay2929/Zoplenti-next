@@ -10,13 +10,15 @@ import OpportunitiesCatalog from "./OpportunitiesCatalog";
 import JoinZoplenti from "../common/JoinZoplenti";
 import AmazonResult from "./AmazonResult";
 import QuestionBrand from "./QuestionBrand";
+import ReviewCards from "../common/ReviewCards";
+import BrandsProcess from "./BrandsProcess";
 
 const Main = () => {
     const brandsPartners = PartnersList[0].partnerslogo;
 
     const [isBannerVisible, setIsBannerVisible] = useState(false);
     return (
-        <div className="bg-midnight ">
+        <div className="bg-midnight">
             <Header isBannerVisible={isBannerVisible} setIsBannerVisible={setIsBannerVisible} />
             <Hero title={["The", <span key="title_brands" className="text-dodgerBlue font-bold"> Amazon partner </span>, "that is your brand’s unfair advantage"]} description="Discover the unparalleled feeling of having a partner that really treats your brand as their own. Watch as we grow your market share and brand equity to new heights." titleStyle="max-w-[884px]" descriptionStyle="max-w-[764px]" />
             {/*  */}
@@ -29,11 +31,9 @@ const Main = () => {
                     <span key="textbold" className="font-bold"> {" "}
                         The result? A scientific, surefire way to plan and execute massivegrowth on Amazon for the long term.
                     </span>,]} borderStyle="border-b-[1px] border-solid border-alto border-opacity-20" />
-            <QuestionBrand
-                Btntitle="GET STARTED"
-                title="Are you serious about growing your brand on Amazon?"
-                description="We're looking for partner brands that take Amazon seriously, to help take their market share andbrand prestige to the next level. If that's you, fill the form below and we'll reach out to you as soon as possible to explore opportunities."
-            />
+            <BrandsProcess />
+            <QuestionBrand Btntitle="GET STARTED" title="Are you serious about growing your brand on Amazon?" description="We're looking for partner brands that take Amazon seriously, to help take their market share andbrand prestige to the next level. If that's you, fill the form below and we'll reach out to you as soon as possible to explore opportunities." />
+            <ReviewCards />
             <Footer />
         </div>
     );
