@@ -1,12 +1,14 @@
 import Image from "next/image";
 import React from "react";
+import Header from "../common/header/Header";
 
 const Hero = (props) => {
   return (
     <>
+      <Header />
       <div className=" relative overflow-hidden ">
         <div
-          className={`bg-blueZodiac-500 relative pt-[68px] md:pt-[88px] lg:pt-[90px] ${props.description_style}`}>
+          className={`bg-blueZodiac-500 relative pt-[68px] md:pt-[88px] lg:pt-[90px] ${props.descriptionStyle}`}>
           {/* Desktop View Background image */}
           <Image
             width={1440}

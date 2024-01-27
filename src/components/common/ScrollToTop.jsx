@@ -50,7 +50,7 @@ const ScrollTop = () => {
           {/* Back to Top button */}
           <div
             onClick={scrollTopHandler}
-            className="h-10 border border-midnight w-10 rounded-full overflow-hidden bg-dodgerBlue hover:bg-midnight hover:card-shadow cursor-pointer transition-all duration-700 flex justify-center items-center">
+            className="h-10 border border-midnight w-10 rounded-full overflow-hidden bg-dodgerBlue hover:bg-midnight hover:card-shadow cursor-pointer transition-all duration-500 flex justify-center items-center">
             <Image
               height={48}
               width={48}

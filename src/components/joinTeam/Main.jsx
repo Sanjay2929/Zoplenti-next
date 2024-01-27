@@ -12,7 +12,6 @@ export const Main = () => {
     <>
       <CustomScrollBar />
       <div className=" bg-midnight">
-        <HeaderView />{" "}
         <Hero
           title="We're on our way to become a top 100 "
           title_span="Amazon Seller"
