@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import amazonBetterResult from "../common/json/AmazonResult";
+import Image from "next/image";
 
 // import { amazonBetterResult } from "../common/Helper";
 const AmazonResult = () => {
@@ -52,7 +53,6 @@ const AmazonResult = () => {
                     slidesToScroll: 1,
                 },
             },
-
         ],
     };
     return (
@@ -75,7 +75,7 @@ const AmazonResult = () => {
                         {...settings}
                         className="store_slider flex flex-row justify-center flex-wrap min-[992px]:gap-y-6 mx-[-12px] pt-2 lg:pt-20"
                     >
-                        {amazonBetterResult.map((data, index) => {
+                        {amazonBetterResult.map((obj, index) => {
                             return (
                                 <div
                                     className="w-1/2 md:w-4/12 min-[992px]:w-3/12 px-3 pt-6 py-3 min-[992px]:py-0"
@@ -83,12 +83,18 @@ const AmazonResult = () => {
                                 >
                                     <div className="rounded-xl border-[1px] border-solid bg-blackPearl border-oxfordBlue h-full py-6 px-1 hover:border-dodgerBlue transition-all duration-300 group">
                                         <div className="flex items-center justify-center w-[60px] h-[60px] sm:w-20 sm:h-20 rounded-full bg-blueZodiac mx-auto">
-                                            {data.icon}
+                                            <Image
+                                                width={45}
+                                                height={45}
+                                                src={obj.image}
+                                                alt="card"
+                                                quality={100}
+                                            />
                                         </div>
                                         <p
-                                            className={`text-white font-aeoniktrials min-h-[64px] pt-4 max-w-[192px] mx-auto text-center !leading-[120%] text-base sm:text-lg md:text-xl lg:text-2xl ${data.descriptionStyle}`}
+                                            className={`text-white font-aeoniktrials min-h-[64px] pt-4 max-w-[192px] mx-auto text-center !leading-[120%] text-base sm:text-lg md:text-xl lg:text-2xl ${obj.descriptionStyle}`}
                                         >
-                                            {data.description}
+                                            {obj.description}
                                         </p>
                                     </div>
                                 </div>
