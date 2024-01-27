@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { RightArrowIcon } from "../common/icons/Home";
-import CustomButton from "../common/CustomButton";
+import { RightArrowIcon } from "./icons/Home";
+import CustomButton from "./CustomButton";
 
 const JoinZoplenti = (props) => {
   return (
@@ -19,25 +19,8 @@ const JoinZoplenti = (props) => {
               </p>
               {/* Links to Brands and Distributors */}
               <div className="flex flex-col items-center md:items-start md:flex-row justify-center md:justify-start gap-4 pt-12">
-                <CustomButton title=" Brands" url="/brands" />
-                {/* <Link
-                  href="/brands"
-                  className={`uppercase text-nowrap group shadow-[0px_0px_11px_0px_rgba(2,_169,_247,_0.33)] text-white font-aeoniktrials font-bold text-base py-[11px] px-[14px] rounded bg-dodgerBlue flex items-center gap-[6px] group hover:bg-transparent border border-solid border-dodgerBlue hover:border-white transition-all duration-300 !leading-[150%] w-full sm:w-1/2 md:w-auto justify-center ${props.buttonHidden}`}>
-                  Brands
-                  <span className="group-hover:translate-x-[4px] duration-300">
-                    <RightArrowIcon />
-                  </span>
-                </Link> */}
+                {props.title !== "Get Started" && <CustomButton title=" Brands" url="/brands" />}
                 <CustomButton title={props.title} url={props.url} />
-
-                {/* <Link
-                  href={props.url}
-                  className="uppercase text-nowrap group shadow-[0px_0px_11px_0px_rgba(2,_169,_247,_0.33)] text-white font-aeoniktrials font-bold text-base py-[11px] px-[14px] rounded bg-dodgerBlue flex items-center gap-[6px] group hover:bg-transparent border border-solid border-dodgerBlue hover:border-white transition-all duration-300 !leading-[150%] w-full sm:w-1/2 md:w-auto justify-center">
-                  {props.button}
-                  <span className="group-hover:translate-x-[4px] duration-300">
-                    <RightArrowIcon />
-                  </span>
-                </Link> */}
               </div>
             </div>
             {/* Separator for Mobile View */}
