@@ -2,15 +2,13 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import {
-  CircleRedCrossIcon,
   CrossIcon,
   ErrorIcon,
   HidePasswordIcon,
-  PageLogoIcon,
-  RightArrowIcon,
   ShowPasswordIcon,
-} from "../common/Icons";
+} from "../common/icons/SignIn";
 import Link from "next/link";
+import { RightArrowIcon } from "../common/icons/Home";
 
 const SignIn = () => {
   const [showPassword, setShowPassword] = useState(false);

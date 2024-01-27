@@ -88,7 +88,7 @@ const CustomScrollBar = () => {
   // Render the scrollbar component
   return (
     <div
-      className={`fixed w-[5px] sm:w-3 bg-blackLight right-0 z-[10000] h-screen flex justify-center transition-all duration-300 ${
+      className={`fixed w-[5px] sm:w-3 bg-balckLight right-0 z-[10000] h-screen flex justify-center transition-all duration-300 ${
         showScroll ? "translate-x-0" : "translate-x-full"
       }`}
       onClick={handleScrollbarClick}>
