@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Header from "../common/header/Header";
 import Hero from "./Hero";
 import RoadMap from "./RoadMap";
-import JoinZoplenti from "./JoinZoplenti";
+import JoinZoplenti from "../common/JoinZoplenti";
 import CoreValue from "./CoreValues";
 import PartnersList from "./../common/json/PartnersList";
 
