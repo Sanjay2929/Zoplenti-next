@@ -27,7 +27,7 @@ const ProcessSteps = (props) => {
           className={`absolute start-0 md:hidden sm:start-[10%] top-[50%] translate-y-[-40%] scale-[1.5] ${props.hiddenImage}`}
           height={728}
           width={365}
-          src="/assets/images/brands/threeStepProcess/png/desktop-three-step-process-image.png"
+          src="/assets/images/brands/threeStepProcess/png/mobile-three-step-process.png"
           alt="image"
         />
         {/* Content for the step process */}
