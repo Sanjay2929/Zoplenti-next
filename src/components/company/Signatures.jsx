@@ -11,7 +11,7 @@ const Signatures = () => {
           className="flex absolute start-1/2 top-[-40px] sm:top-[-30px] md:top-5 translate-x-[-50%] max-w-[100px] sm:max-w-[150px] md:max-w-[300px]"
           width={300}
           height={247}
-          src="/assets/images/partners/svg/z-logo-gradient.svg"
+          src="/assets/images/partners/brandsPartners/svg/z-logo-gradient.svg"
           alt="logo gradian image"
         />
         {/* Content Container */}
