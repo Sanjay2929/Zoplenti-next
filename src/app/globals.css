@@ -48,17 +48,17 @@
   }
 
   .animate-move-y {
-    animation: updown infinite 4s;
+    animation: animate-move-y infinite 4s;
   }
 
-  @keyframes updown {
+  @keyframes animate-move-y {
     0%,
     100% {
-      @apply translate-y-[0px];
+      transform: translateY(0);
     }
 
     50% {
-      @apply translate-y-[10px];
+      transform: translateY(10px);
     }
   }
 
