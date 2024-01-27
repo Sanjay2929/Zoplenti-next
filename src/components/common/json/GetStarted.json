@@ -1,0 +1,26 @@
+[
+  {
+    "image": "/assets/images/getStarted/svg/Amazing-communication.svg",
+    "title": "Amazing Communication"
+  },
+  {
+    "image": "/assets/images/getStarted/svg/large-order.svg",
+    "title": "Large Volume Orders"
+  },
+  {
+    "image": "/assets/images/getStarted/svg/customer-service.svg",
+    "title": "Flawless Customer Service"
+  },
+  {
+    "image": "/assets/images/getStarted/svg/map.svg",
+    "title": "MAP Compliance & Monitoring"
+  },
+  {
+    "image": "/assets/images/getStarted/svg/optimization-marketing.svg",
+    "title": "Optimization & Marketing"
+  },
+  {
+    "image": "/assets/images/getStarted/svg/line-tech.svg",
+    "title": "Top of the Line Tech"
+  }
+]

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-// import { zoplentiFeaturesList } from "../common/Helper";
-// import ZoplentiFamilyFrom from "./ZoplentiFamilyFrom";
+import featuresList from "../../common/json/GetStarted.json";
+import ContactForm from "./ContactForm";
 
 const ZoplentiFamily = () => {
   return (
@@ -20,10 +20,10 @@ const ZoplentiFamily = () => {
           can pursue together.
         </p>
         <div className="flex flex-wrap ">
-          {zoplentiFeaturesList.map((data, index) => {
+          {featuresList.map((obj, i) => {
             return (
               <div
-                key={index}
+                key={i}
                 className="flex flex-col lg:flex-row lg:w-full sm:w-1/2 w-full gap-x-[15.5px] items-center pb-5">
                 {/* Feature Icon */}
                 <div className="sm:w-[53px] sm:h-[53px] w-[45px] h-[45px] flex justify-center items-center bg-tealishBlue rounded-full">
@@ -31,12 +31,12 @@ const ZoplentiFamily = () => {
                     className="sm:w-[27px] h-auto w-[22px]"
                     width={27}
                     height={27}
-                    src={data.image}
+                    src={obj.image}
                     alt="image"
                   />
                 </div>
                 <h5 className="font-aeoniktrials pt-3 lg:pt-0 font-normal lg:text-2xl md:text-xl sm:text-lg text-base text-white">
-                  {data.title}
+                  {obj.title}
                 </h5>
               </div>
             );
@@ -46,7 +46,7 @@ const ZoplentiFamily = () => {
       {/* Right side content: ZoplentiFamilyForm component */}
       <div className="lg:w-1/2 lg:max-w-[556px] w-full max-w-[768px] mx-auto lg:me-0 order-1 lg:order-2">
         {/* Include the ZoplentiFamilyForm component */}
-        {/* <ZoplentiFamilyFrom /> */}
+        <ContactForm />
       </div>
     </div>
   );
