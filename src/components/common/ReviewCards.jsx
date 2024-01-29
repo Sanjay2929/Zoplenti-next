@@ -27,8 +27,16 @@ const ReviewCards = () => {
                     {/* Comment Title and Image */}
                     <div className="flex h-full flex-col justify-between">
                       <p
-                        className={`${obj.className} text-black text-sm md:text-base !leading-[170%] font-normal font-aeoniktrials`}>
-                        {obj.description}
+                        className={`${
+                          i === 0
+                            ? "pe-1 sm:pe-0 md:pe-1 lg:pe-3"
+                            : i === 1
+                            ? "lg:pe-2"
+                            : i === 2
+                            ? "lg:pe-3"
+                            : ""
+                        } text-black text-sm md:text-base !leading-[170%] font-normal font-aeoniktrials`}>
+                        {obj.content}
                       </p>
                       <div className="flex justify-between items-end pt-3">
                         <p
