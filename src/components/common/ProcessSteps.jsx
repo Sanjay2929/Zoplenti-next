@@ -35,7 +35,7 @@ const ProcessSteps = (props) => {
           className={`py-[60px] relative z-20 sm:py-20 md:py-[100px] lg:py-[120px] ${props.borderStyle}`}>
           {/* Title for the step process */}
           <h2
-            className={`text-white sm:text-center font-aeoniktrials text-[32px] md:text-4xl !leading-[133.333%] lg:text-5xl font-bold pe-5 sm:mx-auto sm:px-10 md:px-0 ${props.title_style}`}>
+            className={`text-white sm:text-center font-aeoniktrials text-[32px] md:text-4xl !leading-[133.333%] lg:text-5xl font-bold pe-5 sm:mx-auto sm:px-10 md:px-0 ${props.titleStyle}`}>
             {props.title}
           </h2>
           <p
@@ -51,14 +51,14 @@ const ProcessSteps = (props) => {
                         ">
               {/* Step 1 */}
               <div className="lg:pe-5 md:pe-3 pb-11 md:pb-0 xl:pe-8 flex flex-col sm:items-center md:items-start">
-                {props.step_first_icon}
+                {props.stepFirstIcon}
                 <h3 className="text-white pt-6 lg:pt-[27px] font-normal sm:text-start font-aeoniktrials !leading-[156.25%] sm:!leading-[138.889%] text-[28px] md:text-3xl lg:text-4xl">
-                  {props.step_first_title}
+                  {props.stepFirstTitle}
                 </h3>
                 <p
                   className={`text-white pe-5 sm:text-center sm:px-16 pt-[18px] font-aeoniktrials md:px-0 md:text-start text-sm sm:text-base lg:text-xl font-normal !leading-[170%] md:min-h-[68px] ${props.description_style}`}>
                   {/* We jump on a call to see if We&apos;re a good fit to work together. We go through your Amazon goals, and see if We&apos;re the right company to help. */}
-                  {props.step_first_description}
+                  {props.stepFirstDescription}
                 </p>
               </div>
             </div>
@@ -89,13 +89,13 @@ const ProcessSteps = (props) => {
               />
               {/* Step 2 */}
               <div className="md:px-3 lg:px-5 xl:px-5 flex flex-col sm:items-center md:items-start">
-                {props.step_second_icon}
+                {props.stepSecondIcon}
                 <h3 className="text-white pt-6 lg:pt-[27px] font-normal sm:text-start font-aeoniktrials !leading-[156.25%] sm:!leading-[138.889%] text-[28px] md:text-3xl lg:text-4xl">
-                  {props.step_second_title}
+                  {props.stepSecondTitle}
                 </h3>
                 <p
                   className={`text-white pe-3 sm:text-center sm:px-10 md:px-0 md:text-start pt-[18px] font-aeoniktrials text-sm sm:text-base lg:text-xl font-normal !leading-[170%] md:min-h-[68px] ${props.description_style}`}>
-                  {props.step_second_description}
+                  {props.stepSecondDescription}
                 </p>
               </div>
             </div>
@@ -106,13 +106,13 @@ const ProcessSteps = (props) => {
                         ">
               {/* Step 3 */}
               <div className="md:ps-3 lg:ps-5 xl:ps-9 flex flex-col sm:items-center md:items-start">
-                {props.step_thrid_icon}
+                {props.stepThridIcon}
                 <h3 className="text-white pt-6 lg:pt-[27px] font-normal font-aeoniktrials !leading-[156.25%] sm:!leading-[138.889%] text-[28px] md:text-3xl lg:text-4xl">
-                  {props.step_third_title}
+                  {props.stepThirdTitle}
                 </h3>
                 <p
                   className={`text-white pe-7 sm:text-center md:text-start sm:px-10 md:px-0 pt-[18px] font-aeoniktrials text-sm sm:text-base lg:text-xl font-normal !leading-[170%] md:min-h-[68px] ${props.description_style}`}>
-                  {props.step_third_description}
+                  {props.stepThirdDescription}
                 </p>
               </div>
             </div>
