@@ -156,7 +156,7 @@ const SignIn = () => {
                       })
                     }
                     type="email"
-                    className={`bg-alto blur_filter outline-none rounded-[6px] font-aeoniktrials px-[14px] py-2.5 text-base md:text-lg !leading-[170%] font-normal text-black text-opacity-[49%] placeholder:text-black placeholder:opacity-[49%] ${
+                    className={`bg-alto blur_filter outline-none rounded-[6px] font-aeoniktrials px-[14px] py-2.5 text-base md:text-lg !leading-[170%] font-normal text-black text-opacity-[49%] placeholder:text-black placeholder:opacity-[49%]  ${
                       errorShow
                         ? "outline-red-600 outline-offset-0 outline-[.5px]"
                         : ""

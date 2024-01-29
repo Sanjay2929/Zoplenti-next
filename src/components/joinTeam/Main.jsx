@@ -1,7 +1,6 @@
 import React from "react";
 import Hero from "./Hero";
 import Footer from "../common/Footer";
-import Header from "./Hero";
 import JoinTeam from "./JoinTeam";
 import { Steps } from "./Steps";
 import CustomScrollBar from "../common/CustomScrollBar";

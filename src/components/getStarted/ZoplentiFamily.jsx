@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import featuresList from "../../common/json/GetStarted.json";
+import featuresList from "../common/json/GetStarted.json";
 import ContactForm from "./ContactForm";
 
 const ZoplentiFamily = () => {

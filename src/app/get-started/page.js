@@ -1,4 +1,4 @@
-import Main from "@/components/joinTeam/getStarted/Main";
+import Main from "@/components/getStarted/Main";
 import React from "react";
 
 const page = () => {

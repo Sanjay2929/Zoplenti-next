@@ -36,27 +36,11 @@ const Hero = (props) => {
             </p>
             {/* Action buttons */}
             <div className="pt-[34px] flex gap-4">
-              {/* <Link
-                href="/get-started"
-                className="uppercase text-nowrap group shadow-[0px_0px_11px_0px_rgba(2,_169,_247,_0.33)] text-white font-aeoniktrials font-bold text-base py-[11px] px-[13.6px] rounded bg-dodgerBlue flex items-center gap-[6px] group hover:bg-transparent border border-solid border-dodgerBlue hover:border-white transition-all duration-300 !leading-[150%]">
-                Get started
-                <span className="group-hover:translate-x-[4px] duration-300">
-                  <RightArrowIcon />
-                </span>
-              </Link> */}
               <CustomButton title="Get started" url="/get-started" />
               <div className={` hidden ${props.flex}`}>
                 {" "}
                 <CustomButton title="Join our team" url="/join-our-team" />
               </div>
-
-              {/* <Link
-                href=""
-                className={`uppercase text-nowrap group shadow-[0px_0px_11px_0px_rgba(2,_169,_247,_0.33)] text-white font-aeoniktrials font-bold text-base py-[11px] px-[13.6px] rounded bg-dodgerBlue items-center gap-[6px] group hover:bg-transparent border border-solid border-dodgerBlue hover:border-white transition-all duration-300 !leading-[150%] `}>
-                <span className="group-hover:translate-x-[4px] duration-300">
-                  <RightArrowIcon />
-                </span>
-              </Link> */}
             </div>
           </div>
         </div>
