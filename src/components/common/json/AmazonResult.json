@@ -1,39 +1,35 @@
 [
   {
     "image": "/assets/images/brands/amazonResult/svg/OrderShoppingIcon.svg",
-    "description": "Consistent wholesale orders"
+    "content": "Consistent wholesale orders"
   },
   {
     "image": "/assets/images/brands/amazonResult/svg/MaterailIcon.svg",
-    "description": "Dedicated account manager"
+    "content": "Dedicated account manager"
   },
   {
     "image": "/assets/images/brands/amazonResult/svg/HappyFaceIcon.svg",
-    "description": "Flawless customer service",
-    "descriptionStyle": "md:!max-w-[192px] !max-w-[140px]"
+    "content": "Flawless customer service"
   },
   {
     "image": "/assets/images/brands/amazonResult/svg/SharpMapIcon.svg",
-    "description": "MAP compliance",
-    "descriptionStyle": "md:!max-w-[153px] !max-w-[116px]"
+    "content": "MAP compliance"
   },
   {
     "image": "/assets/images/brands/amazonResult/svg/GrowthIcon.svg",
-    "description": "Listing & keyword optimization"
+    "content": "Listing & keyword optimization"
   },
   {
     "image": "/assets/images/brands/amazonResult/svg/ListingGrowthIcon.svg",
-    "description": "Growth marketing",
-    "descriptionStyle": "md:!max-w-[192px] !max-w-[120px]"
+    "content": "Growth marketing"
   },
   {
     "image": "/assets/images/brands/amazonResult/svg/AmazonIcon.svg",
-    "description": "Amazon advertising",
-    "descriptionStyle": "md:!max-w-[192px] !max-w-[140px]"
+    "content": "Amazon advertising"
   },
   {
     "image": "/assets/images/brands/amazonResult/svg/MonitoringIcon.svg",
-    "description": "Automated MAP monitoring",
-    "descriptionStyle": "!max-w-[173px]"
+    "content": "Automated MAP monitoring",
+    "contentStyle": "!max-w-[173px]"
   }
 ]

@@ -19,10 +19,10 @@ const AmazonSeller = () => {
         </p>
       </div>
       {/* Mapping through sellAmazonList to render dynamic content */}
-      {sellAmazonList.map((obj, index) => (
+      {sellAmazonList.map((obj, i) => (
         <div
-          key={index}
-          className={`border-t border-dodgerBlue py-4 lg:py-[60px] sm:py-[34px] ${obj.backgroundColor}`}>
+          key={i}
+          className={`border-t border-dodgerBlue py-4 lg:py-[60px] sm:py-[34px] ${i === 3 ? "bg-dodgerBlue" :"sell_amazon_bg"}`}>
           {/* Container for each item in sellAmazonList */}
           <div className="container md:px-12 xl:px-3 max-w-[1140px] px-4 sm:px-8 mx-auto relative">
             <div className="relative flex flex-row sm:items-center gap-2.5">
@@ -42,8 +42,8 @@ const AmazonSeller = () => {
               </h3>
             </div>
             <p
-              className={`text-white pt-[18px] font-aeoniktrials font-normal text-sm sm:text-base md:text-lg lg:text-xl !leading-[170%] pe-8 min-[430px]:pe-0 ${obj.discriptionStyle}`}>
-              {obj.discription}
+              className={`text-white pt-[18px] font-aeoniktrials font-normal text-sm sm:text-base md:text-lg lg:text-xl !leading-[170%] pe-8 min-[430px]:pe-0 ${i === 3? "max-w-[1119px]" : "max-w-[1077px]"}`}>
+              {obj.content}
             </p>
           </div>
         </div>

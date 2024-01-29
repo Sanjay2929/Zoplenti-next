@@ -74,11 +74,11 @@ const AmazonResult = () => {
           <Slider
             {...settings}
             className="store_slider flex flex-row justify-center flex-wrap min-[992px]:gap-y-6 mx-[-12px] pt-2 lg:pt-20">
-            {amazonBetterResult.map((obj, index) => {
+            {amazonBetterResult.map((obj, i) => {
               return (
                 <div
                   className="w-1/2 md:w-4/12 min-[992px]:w-3/12 px-3 pt-6 py-3 min-[992px]:py-0"
-                  key={index}>
+                  key={i}>
                   <div className="rounded-xl border-[1px] border-solid bg-blackPearl border-oxfordBlue h-full py-6 px-1 hover:border-dodgerBlue transition-all duration-300 group">
                     <div className="flex items-center justify-center w-[60px] h-[60px] sm:w-20 sm:h-20 rounded-full bg-blueZodiac mx-auto">
                       <Image
@@ -90,8 +90,8 @@ const AmazonResult = () => {
                       />
                     </div>
                     <p
-                      className={`text-white font-aeoniktrials min-h-[64px] pt-4 max-w-[192px] mx-auto text-center !leading-[120%] text-base sm:text-lg md:text-xl lg:text-2xl ${obj.descriptionStyle}`}>
-                      {obj.description}
+                      className={`text-white font-aeoniktrials min-h-[64px] pt-4 max-w-[192px] mx-auto text-center !leading-[120%] text-base sm:text-lg md:text-xl lg:text-2xl ${i === 2 || i === 6 ? "md:!max-w-[192px] !max-w-[140px]" : i === 3 ? "md:!max-w-[153px] !max-w-[116px]" : i === 5 ? "md:!max-w-[192px] !max-w-[120px]" : i === 7 && "!max-w-[173px]"}`}>
+                      {obj.content}
                     </p>
                   </div>
                 </div>

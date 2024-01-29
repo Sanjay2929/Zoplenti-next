@@ -82,7 +82,7 @@ const Mambers = () => {
                         {obj.subtitle}
                       </p>
                       <p className="text-white pt-[18px] font-aeoniktrials font-normal text-sm sm:text-base md:text-lg lg:text-xl !leading-[170%]">
-                        {obj.description}
+                        {obj.content}
                       </p>
                     </div>
                   </div>
