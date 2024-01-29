@@ -11,7 +11,7 @@ import JoinZoplenti from "../common/JoinZoplenti";
 import AmazonResult from "./AmazonResult";
 import QuestionBrands from "./QuestionBrands";
 import ReviewCards from "../common/ReviewCards";
-import BrandsProcess from "./BrandsProcess";
+import Process from "./Process";
 
 const Main = () => {
   const brandsPartners = PartnersList[0].partnerslogo;
@@ -66,7 +66,7 @@ const Main = () => {
         ]}
         borderStyle="border-b-[1px] border-solid border-alto border-opacity-20"
       />
-      <BrandsProcess />
+      <Process />
       <QuestionBrands
         Btntitle="GET STARTED"
         title="Are you serious about growing your brand on Amazon?"
