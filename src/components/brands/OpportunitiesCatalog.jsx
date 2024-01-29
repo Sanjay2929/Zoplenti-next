@@ -23,7 +23,6 @@ const OpportunitiesCatalog = (props) => {
                                 </p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
