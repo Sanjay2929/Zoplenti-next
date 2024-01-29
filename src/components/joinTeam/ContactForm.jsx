@@ -3,8 +3,10 @@ import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import CustomSuccessPopup from "../common/CustomSuccessPopup";
 import { RightArrowIcon } from "../common/icons/Home";
+import CustomInput from "../common/fields/CustomInput";
+import CustomButton from "../common/CustomButton";
 
-const SignUp = () => {
+const ContactForm = () => {
   const [fileFileName, setFileFileName] = useState(""); // Changed state variable name
 
   const [joinTeamDetails, setJoinTeamDetails] = useState({
@@ -131,19 +133,18 @@ const SignUp = () => {
                       className="font-aeoniktrials font-normal text-base text-white pb-2 inline-block">
                       First name
                     </label>
-                    <input
-                      required
+
+                    <CustomInput
                       type="text"
-                      id="first_name"
-                      className="w-full !leading-[170%] py-2 px-[14px] bg-alto rounded-md text-base font-aeoniktrials font-normal text-black text-opacity-[49%] placeholder:text-base placeholder:text-black placeholder:!text-opacity-[49%] outline-none"
                       placeholder="First name"
-                      value={joinTeamDetails.firstName}
-                      onChange={(e) =>
+                      onInputChange={(e) =>
                         setJoinTeamDetails({
                           ...joinTeamDetails,
                           firstName: capitalizeFirstLetter(e.target.value),
                         })
                       }
+                      value={joinTeamDetails.firstName}
+                      id="first_name"
                     />
                   </div>
                   {/* LAST NAME  */}
@@ -153,19 +154,18 @@ const SignUp = () => {
                       className="font-aeoniktrials font-normal text-base text-white pb-2 inline-block">
                       Last name
                     </label>
-                    <input
-                      required
+
+                    <CustomInput
                       type="text"
-                      id="Last_name"
-                      className="w-full !leading-[170%] py-2 px-[14px] bg-alto rounded-md text-base font-aeoniktrials font-normal text-black text-opacity-[49%] placeholder:text-base placeholder:text-black placeholder:!text-opacity-[49%] outline-none"
                       placeholder="Last name"
-                      value={joinTeamDetails.lastName}
-                      onChange={(e) =>
+                      onInputChange={(e) =>
                         setJoinTeamDetails({
                           ...joinTeamDetails,
                           lastName: capitalizeFirstLetter(e.target.value),
                         })
                       }
+                      value={joinTeamDetails.lastName}
+                      id="Last_name"
                     />
                   </div>
                 </div>
@@ -176,18 +176,18 @@ const SignUp = () => {
                     className="font-aeoniktrials font-normal text-base text-white pb-2 inline-block">
                     Email
                   </label>
-                  <input
-                    required
+
+                  <CustomInput
                     type="email"
-                    id="email_user"
-                    className="w-full !leading-[170%] py-2 px-[14px] bg-alto rounded-md text-base font-aeoniktrials font-normal text-black text-opacity-[49%] placeholder:text-base placeholder:text-black placeholder:!text-opacity-[49%] outline-none"
-                    placeholder="nextemployee@zoplenti.com"
-                    onChange={(e) =>
+                    placeholder="email"
+                    onInputChange={(e) =>
                       setJoinTeamDetails({
                         ...joinTeamDetails,
                         email: e.target.value,
                       })
                     }
+                    value={joinTeamDetails.email}
+                    id="email_user"
                   />
                 </div>
                 {/* UPLOAD FILE  */}
@@ -246,24 +246,8 @@ const SignUp = () => {
                 </div>
                 {/* SUBMIT BUTTON  */}
                 <div className="pt-3">
-                  <button
-                    type="submit"
-                    className="uppercase text-nowrap group shadow-[0px_0px_11px_0px_rgba(2,_169,_247,_0.33)] h-12 text-white font-aeoniktrials font-bold text-base py-[11px] px-[13.6px] rounded bg-dodgerBlue flex items-center gap-[6px] group hover:bg-transparent border border-solid border-dodgerBlue hover:border-white transition-all duration-300 !leading-[150%] w-full justify-center">
-                    {loading ? (
-                      <div className="flex gap-1">
-                        <span className="w-2 h-2 rounded-full bg-white inline-block animate_wave"></span>
-                        <span className="w-2 h-2 rounded-full bg-white inline-block animate_wave2"></span>
-                        <span className="w-2 h-2 rounded-full bg-white inline-block animate_wave3"></span>
-                      </div>
-                    ) : (
-                      <>
-                        SUBMIT
-                        <span className="group-hover:translate-x-[4px] duration-300">
-                          <RightArrowIcon />
-                        </span>
-                      </>
-                    )}
-                  </button>
+                  {" "}
+                  <CustomButton loading={loading} title="SUBMIT" url="null" />
                 </div>
               </div>
             </form>
@@ -274,4 +258,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default ContactForm;

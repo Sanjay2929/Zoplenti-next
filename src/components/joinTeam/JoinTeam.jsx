@@ -1,11 +1,12 @@
 import React from "react";
-import SignUp from "../aunthication/SignUp";
+import ContactForm from "./ContactForm";
 
 export const JoinTeam = () => {
   return (
     <>
       {/* Container for the "Join Zoplenti" section */}
       <div
+        id="contact"
         className={`container md:px-12 xl:px-3 sm:px-8 max-w-[1140px] relative z-10 px-4 mx-auto overflow-hidden `}>
         {/* Flex container for layout */}
         <div className="py-[60px] sm:py-20 md:py-[100px] lg:py-[120px] flex flex-col md:flex-row justify-between md:gap-6">
@@ -29,7 +30,7 @@ export const JoinTeam = () => {
           {/* Right side: JoinOurTeamForm component */}
           <div className="order-1 md:order-2">
             {/* Include the JoinOurTeamForm component */}
-            <SignUp />
+            <ContactForm />
           </div>
         </div>
       </div>

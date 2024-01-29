@@ -3,8 +3,10 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { DropDownArrowIcon } from "@/components/common/icons/GetStarted";
 import { RightArrowIcon } from "@/components/common/icons/Home";
-import contactList from "../../common/json/GetStartedContactForm";
+import contactList from "../common/json/GetStartedContactForm";
 import CustomSuccessPopup from "@/components/common/CustomSuccessPopup";
+import CustomInput from "../common/fields/CustomInput";
+import CustomButton from "../common/CustomButton";
 
 const ContactForm = () => {
   const [selectedRadio, setSelectedRadio] = useState("brand");
@@ -80,7 +82,6 @@ const ContactForm = () => {
       });
     e.target.reset();
   };
-
   return (
     <>
       <div className="w-full border h-full border-dodgerBlue rounded-xl p-5 sm:p-6 md:p-7 bg-deepCove blur_filter">
@@ -106,19 +107,18 @@ const ContactForm = () => {
                     className="font-aeoniktrials font-normal text-base text-white pb-2 inline-block">
                     First name
                   </label>
-                  <input
+
+                  <CustomInput
                     type="text"
-                    required
-                    id="Firstname"
-                    className="w-full py-2 px-[14px] bg-alto rounded-md text-base font-aeoniktrials font-normal text-black text-opacity-[49%] placeholder:text-base placeholder:text-black placeholder:!text-opacity-[49%] outline-none"
                     placeholder="First name"
-                    value={joinFamilyDetails.firstName}
-                    onChange={(e) =>
+                    onInputChange={(e) =>
                       setJoinFamilyDetails({
                         ...joinFamilyDetails,
                         firstName: capitalizeFirstLetter(e.target.value),
                       })
                     }
+                    value={joinFamilyDetails.firstName}
+                    id="Firstname"
                   />
                 </div>
                 <div className="w-full">
@@ -128,19 +128,18 @@ const ContactForm = () => {
                     className="font-aeoniktrials font-normal text-base text-white pb-2 inline-block">
                     Last name
                   </label>
-                  <input
+
+                  <CustomInput
                     type="text"
-                    required
-                    id="Lastname"
-                    className="w-full py-2 px-[14px] bg-alto rounded-md text-base font-aeoniktrials font-normal text-black text-opacity-[49%] placeholder:text-base placeholder:text-black placeholder:!text-opacity-[49%] outline-none"
-                    placeholder="Last name"
-                    value={joinFamilyDetails.lastName}
-                    onChange={(e) =>
+                    placeholder="Lastname"
+                    onInputChange={(e) =>
                       setJoinFamilyDetails({
                         ...joinFamilyDetails,
                         lastName: capitalizeFirstLetter(e.target.value),
                       })
                     }
+                    value={joinFamilyDetails.lastName}
+                    id="Lastname"
                   />
                 </div>
               </div>
@@ -153,7 +152,7 @@ const ContactForm = () => {
                     className="font-aeoniktrials font-normal text-base text-white pb-2 inline-block">
                     Email
                   </label>
-                  <input
+                  {/* <input
                     type="email"
                     required
                     id="Email"
@@ -165,6 +164,18 @@ const ContactForm = () => {
                         email: e.target.value,
                       })
                     }
+                  /> */}
+                  <CustomInput
+                    type="email"
+                    placeholder="Lastname"
+                    onInputChange={(e) =>
+                      setJoinFamilyDetails({
+                        ...joinFamilyDetails,
+                        email: e.target.value,
+                      })
+                    }
+                    value={joinFamilyDetails.email}
+                    id="Email"
                   />
                 </div>
                 <div className="w-full">
@@ -194,7 +205,7 @@ const ContactForm = () => {
                     className="font-aeoniktrials font-normal text-base text-white pb-2 inline-block">
                     Company name
                   </label>
-                  <input
+                  {/* <input
                     required
                     type="text"
                     id="Companyname"
@@ -206,6 +217,18 @@ const ContactForm = () => {
                         companyName: e.target.value,
                       })
                     }
+                  /> */}
+                  <CustomInput
+                    type="text"
+                    placeholder="Company name"
+                    onInputChange={(e) =>
+                      setJoinFamilyDetails({
+                        ...joinFamilyDetails,
+                        companyName: e.target.value,
+                      })
+                    }
+                    value={joinFamilyDetails.companyName}
+                    id="Companyname"
                   />
                 </div>
                 <div className="w-full">
@@ -215,7 +238,19 @@ const ContactForm = () => {
                     className="font-aeoniktrials font-normal text-base text-white pb-2 inline-block">
                     Company website
                   </label>
-                  <input
+                  <CustomInput
+                    type="text"
+                    placeholder="Company website"
+                    onInputChange={(e) =>
+                      setJoinFamilyDetails({
+                        ...joinFamilyDetails,
+                        companyWebsiteName: e.target.value,
+                      })
+                    }
+                    value={joinFamilyDetails.companyWebsiteName}
+                    id="Companywebsite"
+                  />
+                  {/* <input
                     required
                     type="text"
                     id="Companywebsite"
@@ -227,7 +262,7 @@ const ContactForm = () => {
                         companyWebsiteName: e.target.value,
                       })
                     }
-                  />
+                  /> */}
                 </div>
               </div>
               <h4 className="font-aeoniktrials font-normal sm:text-[18px] text-[16px] text-white pb-2.5">
@@ -342,22 +377,10 @@ const ContactForm = () => {
                 }
               />
               {/* button submit */}
-              <button className="w-full uppercase shadow-[0px_0px_11px_0px_rgba(2,_169,_247,_0.33)] justify-center text-white font-aeoniktrials h-[48px] font-bold !leading-[150%] text-base py-[11px] px-[14px] rounded bg-dodgerBlue flex items-center border border-dodgerBlue hover:border-white hover:bg-transparent transition-all duration-300 gap-2 group mt-8 sm:mt-10 md:mt-12">
-                {loading ? (
-                  <div className="flex gap-1">
-                    <span className="w-2 h-2 rounded-full bg-white inline-block animate_wave"></span>
-                    <span className="w-2 h-2 rounded-full bg-white inline-block animate_wave2"></span>
-                    <span className="w-2 h-2 rounded-full bg-white inline-block animate_wave3"></span>
-                  </div>
-                ) : (
-                  <>
-                    SUBMIT
-                    <span className="group-hover:translate-x-[4px] duration-300">
-                      <RightArrowIcon />
-                    </span>
-                  </>
-                )}
-              </button>
+              <div className="mt-8 sm:mt-10 md:mt-12">
+                {" "}
+                <CustomButton loading={loading} title="SUBMIT" url="null" />
+              </div>
             </form>
           </>
         )}
