@@ -79,10 +79,10 @@ const Mambers = () => {
                         {obj.title}
                       </h3>
                       <p className="text-white opacity-80 pt-1 font-aeoniktrials font-normal text-sm sm:text-base md:text-lg lg:text-xl !leading-[170%]">
-                        {obj.subtitle}
+                        {obj.role}
                       </p>
                       <p className="text-white pt-[18px] font-aeoniktrials font-normal text-sm sm:text-base md:text-lg lg:text-xl !leading-[170%]">
-                        {obj.description}
+                        {obj.content}
                       </p>
                     </div>
                   </div>
