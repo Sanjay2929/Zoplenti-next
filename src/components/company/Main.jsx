@@ -2,9 +2,9 @@ import React from "react";
 import Header from "../common/header/Header";
 import Hero from "../common/Hero";
 import { Process } from "./Process";
-import Mambers from "./Mambers";
+import Members from "./Members";
 import Signatures from "./Signatures";
-import Footer from "../common/footer/Footer";
+import Footer from "../common/Footer";
 
 const Company = () => {
   return (
@@ -26,7 +26,7 @@ const Company = () => {
           flex="!flex"
         />
         <Signatures />
-        <Mambers />
+        <Members />
         <Process />
         <Footer />
       </div>

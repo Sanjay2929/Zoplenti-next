@@ -1,5 +1,5 @@
 import Hero from "../common/Hero";
-import Footer from "../common/footer/Footer";
+import Footer from "../common/Footer";
 import Header from "../common/header/Header";
 import PrivacyPolicyDescription from "./PrivacyPolicyDescription";
 import ScopePolicy from "./ScopePolicy";

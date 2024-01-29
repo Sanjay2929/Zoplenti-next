@@ -1,5 +1,5 @@
 import Hero from "../Hero";
-import Footer from "@/components/common/footer/Footer";
+import Footer from "@/components/common/Footer";
 import Header from "@/components/common/header/Header";
 import ZoplentiStatistics from "./ZoplentiStatistics";
 import ZoplentiFamily from "./ZoplentiFamily";

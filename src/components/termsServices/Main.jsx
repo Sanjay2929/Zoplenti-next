@@ -1,9 +1,9 @@
 import Hero from "../common/Hero";
-import Footer from "../common/footer/Footer";
+import Footer from "../common/Footer";
 import Header from "../common/header/Header";
-import AcceptablePolicyDescription from "./AcceptablePolicyDescription";
-import GeneralConditionDescription from "./GeneralConditionDescription";
-import { TermsOfUseDescription } from "./TermsOfUseDescription";
+import AcceptablePolicyDescription from "./AcceptablePolicyContent";
+import GeneralConditionDescription from "./GeneralConditionContent";
+import { TermsOfUseDescription } from "./TermsOfUseContent";
 
 const Main = () => {
   return (

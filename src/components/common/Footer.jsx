@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import navigationLinks from "./../json/Footer";
-import CustomButton from "../CustomButton";
+import navigationLinks from "./json/Footer.json";
+import CustomButton from "./CustomButton";
 
 const Footer = () => {
   const year = new Date().getFullYear();
