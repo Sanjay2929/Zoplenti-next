@@ -1,7 +1,7 @@
 import Hero from "../common/Hero";
 import Footer from "../common/Footer";
 import Header from "../common/header/Header";
-import PrivacyPolicyDescription from "./PrivacyPolicyDescription";
+import Content from "./Content";
 import ScopePolicy from "./ScopePolicy";
 
 const Main = () => {
@@ -21,7 +21,7 @@ const Main = () => {
           descriptionStyle="pt-4"
           joinZoplenti={<ScopePolicy />}
         />
-        <PrivacyPolicyDescription />
+        <Content />
         <Footer />
       </div>
     </>

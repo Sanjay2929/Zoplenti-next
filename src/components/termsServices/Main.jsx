@@ -1,5 +1,5 @@
-import Hero from "../common/Hero";
 import Footer from "../common/Footer";
+import Hero from "../common/Hero";
 import Header from "../common/header/Header";
 import AcceptablePolicyDescription from "./AcceptablePolicyContent";
 import GeneralConditionDescription from "./GeneralConditionContent";
