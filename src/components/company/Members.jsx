@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import mamberList from "../common/json/CompanyMambers";
+import memberList from "../common/json/CompanyMembers.json";
 const Mambers = () => {
   const [isHovered, setIsHovered] = useState(null);
 
@@ -24,7 +24,7 @@ const Mambers = () => {
           </h2>
           {/* Team members grid */}
           <div className="flex flex-wrap flex-row  gap-y-7 mx-[-12px]">
-            {mamberList.map((obj, i) => {
+            {memberList.map((obj, i) => {
               return (
                 <div
                   key={i}
