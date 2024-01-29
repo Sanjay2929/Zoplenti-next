@@ -1,7 +1,7 @@
 import React from 'react'
 import CustomButton from '../common/CustomButton';
 
-export const QuestionBrand = (props) => {
+export const QuestionBrands = (props) => {
 
     return (
         <>
@@ -26,4 +26,4 @@ export const QuestionBrand = (props) => {
     );
 }
 
-export default QuestionBrand;
+export default QuestionBrands;

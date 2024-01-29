@@ -9,7 +9,7 @@ import AmazonSeller from "./AmazonSeller";
 import OpportunitiesCatalog from "./OpportunitiesCatalog";
 import JoinZoplenti from "../common/JoinZoplenti";
 import AmazonResult from "./AmazonResult";
-import QuestionBrand from "./QuestionBrand";
+import QuestionBrands from "./QuestionBrands";
 import ReviewCards from "../common/ReviewCards";
 import BrandsProcess from "./BrandsProcess";
 
@@ -67,7 +67,7 @@ const Main = () => {
         borderStyle="border-b-[1px] border-solid border-alto border-opacity-20"
       />
       <BrandsProcess />
-      <QuestionBrand
+      <QuestionBrands
         Btntitle="GET STARTED"
         title="Are you serious about growing your brand on Amazon?"
         description="We're looking for partner brands that take Amazon seriously, to help take their market share andbrand prestige to the next level. If that's you, fill the form below and we'll reach out to you as soon as possible to explore opportunities."
