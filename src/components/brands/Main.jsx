@@ -41,9 +41,9 @@ const Main = () => {
         hidden="hidden"
         brands={brandsPartners}
         show="brands"
-        translate_remove="!translate-y-0"
+        translateRemove="!translate-y-0"
         containerStyle="mb-0"
-        padding_top="md:pt-[86px]"
+        paddingTop="md:pt-[86px]"
       />
       <AmazonSeller />
       <JoinZoplenti

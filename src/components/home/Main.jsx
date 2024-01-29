@@ -28,8 +28,8 @@ const Main = () => {
       <Brands
         brands={PartnersList}
         show="all"
-        margin_bottom="mb-[-40px] sm:mb-[-80px]"
-        padding_top="md:pt-[100px] lg:pt-[120px]"
+        marginBottom="mb-[-40px] sm:mb-[-80px]"
+        paddingTop="md:pt-[100px] lg:pt-[120px]"
       />
 
       {/*  */}

@@ -13,8 +13,8 @@ export const Process = () => {
         borderStyle="border-opacity-20 border-y border-alto"
         containerStyle="!pt-0"
         hiddenImage="!hidden"
-        step_first_title="Top Amazon Seller"
-        step_first_description={[
+        stepFirstTitle="Top Amazon Seller"
+        stepFirstDescription={[
           "We are ranked among the",
           <span key="textBlod" className="font-bold">
             {" "}
@@ -27,8 +27,8 @@ export const Process = () => {
           </span>,
           "from customers. And we’re very, very proud of it.",
         ]}
-        step_second_title="Inc. 5000"
-        step_second_description={[
+        stepSecondTitle="Inc. 5000"
+        stepSecondDescription={[
           "In 2022 we were recognized as one of",
           <span key="textBlod" className="font-bold">
             {" "}
@@ -36,8 +36,8 @@ export const Process = () => {
           </span>,
           "and we keep growing.",
         ]}
-        step_third_title="Active since 2016"
-        step_third_description={[
+        stepThirdTitle="Active since 2016"
+        stepThirdDescription={[
           "We are a family-run business,",
           <span key="textBlod" className="font-bold">
             {" "}
@@ -45,9 +45,9 @@ export const Process = () => {
           </span>,
           "and headquartered in Tampa, Florida.",
         ]}
-        step_first_icon={<AmazonSellerIcon />}
-        step_second_icon={<GrowingAmercianCompanyIcon />}
-        step_thrid_icon={<CheckListIcon />}
+        stepFirstIcon={<AmazonSellerIcon />}
+        stepSecondIcon={<GrowingAmercianCompanyIcon />}
+        stepThridIcon={<CheckListIcon />}
       />
     </>
   );

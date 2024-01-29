@@ -6,16 +6,16 @@ const Brands = ({
   brands, // Array of brand objects containing title, partners logos, and styles
   show, // Determines whether to display all logos or specific ones
   hidden, // CSS class for hiding the background image
-  translate_remove, // CSS class for removing translation
-  margin_bottom, // CSS class for controlling margin bottom
-  padding_top, // CSS class for controlling padding top
+  translateRemove, // CSS class for removing translation
+  marginBottom, // CSS class for controlling margin bottom
+  paddingTop, // CSS class for controlling padding top
 }) => {
   return (
     <>
       {/* Partners Section */}
       <div
         id="brand"
-        className={`w-full relative sm:translate-y-[-80px] translate-y-[-40px] ${translate_remove}`}>
+        className={`w-full relative sm:translate-y-[-80px] translate-y-[-40px] ${translateRemove}`}>
         <Image
           src="/assets/images/partners/brandsPartners/svg/layer-bg-image.svg"
           height={332}
@@ -24,7 +24,7 @@ const Brands = ({
           alt="image"
         />
         <div
-          className={`container md:px-12 xl:px-3 sm:px-8 max-w-[1140px] relative z-10 px-4 mx-auto pb-[60px] sm:pb-20 md:pb-[100px] lg:pb-[120px] ${margin_bottom}`}>
+          className={`container md:px-12 xl:px-3 sm:px-8 max-w-[1140px] relative z-10 px-4 mx-auto pb-[60px] sm:pb-20 md:pb-[100px] lg:pb-[120px] ${marginBottom}`}>
           <div className="relative after:absolute after:inset-0 after:rounded-[25px] after:p-[1px] rounded-[25px] border_gradent m-1">
             {/* Background images */}
             <Image
@@ -43,7 +43,7 @@ const Brands = ({
             />
             {/* Content */}
             <div
-              className={`${padding_top} px-3 sm:px-6 md:px-12 lg:px-16 relative z-30 pt-11 sm:pt-[70px] pb-[34px] sm:pb-10 md:pb-11 lg:pb-12`}>
+              className={`${paddingTop} px-3 sm:px-6 md:px-12 lg:px-16 relative z-30 pt-11 sm:pt-[70px] pb-[34px] sm:pb-10 md:pb-11 lg:pb-12`}>
               {show === "all" ? (
                 // HOMEPAGE PARTNERS
                 <div className="flex flex-col sm:gap-y-[74px] gap-y-[32px]">
