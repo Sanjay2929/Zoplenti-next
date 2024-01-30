@@ -1,5 +1,6 @@
 // Importing the Home component from the specified path
-import HomePage from "@/components/home/Home";
+import CustomScrollBar from "@/components/common/CustomScrollBar";
+import Main from "@/components/home/Main";
 
 // Metadata object containing information about the website
 export const metadata = {
@@ -25,9 +26,11 @@ export const metadata = {
 // Default export for the Home component
 export default function Home() {
   // Returning the Home component
+
   return (
     <>
-      <HomePage />
+      <Main />
+      <CustomScrollBar />
     </>
   );
 }

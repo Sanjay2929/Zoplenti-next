@@ -19,8 +19,7 @@ const Hero = ({ isBannerVisible }) => {
         className={`flex-grow-[1] min-h-screen bg-herobg bg-cover bg-no-repeat relative h-full flex flex-col justify-center items-center overflow-hidden ${
           // Adjust top padding based on pathname and banner visibility
           pathName !== "/" && "pt-[60px]"
-        }  ${isBannerVisible ? "!pt-[60px]" : "pt-[150px]"} `}
-      >
+        }  ${isBannerVisible ? "!pt-[60px]" : "pt-[150px]"} `}>
         {/* Left logo image */}
         <Image
           className="absolute w-[86px] sm:w-[130px] md:w-[150px] lg:w-[176px] start-[-60px] md:start-[-55px] lg:start-[-80px]"
@@ -54,13 +53,13 @@ const Hero = ({ isBannerVisible }) => {
           </p>
           {/* Action buttons */}
           <div className="flex gap-4 pt-10 lg:pt-12">
-            <CustomButton title="Brands" url="" />
-            <CustomButton title="Distributors" url="" />
+            <CustomButton title="Brands" url="/barnds" />
+            <CustomButton title="Distributors" url="/distributors" />
           </div>
           {/* Scroll down arrow */}
           <div className="min-h-[88px] flex items-end">
             {/* Link to scroll smoothly to the specified section */}
-            <Link href="#brand" className="scroll-smooth updown">
+            <Link href="#brand" className="scroll-smooth animate-move-y">
               <DownCircleArrowIcon />
             </Link>
           </div>

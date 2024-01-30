@@ -1,0 +1,35 @@
+[
+  {
+    "image": "/assets/images/brands/amazonResult/svg/OrderShoppingIcon.svg",
+    "content": "Consistent wholesale orders"
+  },
+  {
+    "image": "/assets/images/brands/amazonResult/svg/MaterailIcon.svg",
+    "content": "Dedicated account manager"
+  },
+  {
+    "image": "/assets/images/brands/amazonResult/svg/HappyFaceIcon.svg",
+    "content": "Flawless customer service"
+  },
+  {
+    "image": "/assets/images/brands/amazonResult/svg/SharpMapIcon.svg",
+    "content": "MAP compliance"
+  },
+  {
+    "image": "/assets/images/brands/amazonResult/svg/GrowthIcon.svg",
+    "content": "Listing & keyword optimization"
+  },
+  {
+    "image": "/assets/images/brands/amazonResult/svg/ListingGrowthIcon.svg",
+    "content": "Growth marketing"
+  },
+  {
+    "image": "/assets/images/brands/amazonResult/svg/AmazonIcon.svg",
+    "content": "Amazon advertising"
+  },
+  {
+    "image": "/assets/images/brands/amazonResult/svg/MonitoringIcon.svg",
+    "content": "Automated MAP monitoring",
+    "contentStyle": "!max-w-[173px]"
+  }
+]
