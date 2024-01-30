@@ -27,7 +27,6 @@ const NotFound = () => {
   return (
     <div className="bg-midnight">
       {/* Navigation Bar */}
-
       <Header />
 
       {/* Main Content */}

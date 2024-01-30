@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Header from "../common/header/Header";
-import PartnersList from "./../common/json/PartnersList";
+import PartnersList from "../common/json/PartnersList";
 import Brands from "../common/partners/Brands";
 import Footer from "../common/Footer";
 import Hero from "../common/Hero";
