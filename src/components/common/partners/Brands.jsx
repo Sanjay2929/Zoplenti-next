@@ -61,9 +61,9 @@ const Brands = ({
                               <div key={i} className="flex items-center">
                                 <Link href={obj.url}>
                                   <Image
-                                    className={`${obj.style} hover:scale-[1.05] transition-all duration-700`}
                                     height={obj.imageHeight}
                                     width={obj.imageWidth}
+                                    className={`${obj.style} hover:scale-[1.05] transition-all duration-700`}
                                     src={obj.image}
                                     alt="card"
                                     quality={100}
