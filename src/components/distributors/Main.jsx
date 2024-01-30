@@ -20,7 +20,7 @@ export default function main() {
                     descriptionStyle="max-w-[647px]"
                 />
                 {/* <Partners hidden="hidden" brands={distributionPartners} show="distributors" translate_remove="!translate-y-0" margin_bottom="mb-0" padding_top="md:pt-[86px]" /> */}
-                <ReliableDistributor     />
+                <ReliableDistributor />
                 <OpportunitiesCatalog
                     maxWidth="max-w-[978px]"
                     title="Our proprietary tech stack lets us find large opportunities in your catalog"
@@ -37,6 +37,7 @@ export default function main() {
                 {/* <DistributorsStepProcess /> */}
                 <QuestionBrands
                     title="Do you have a large catalog of name brands?"
+                    Btntitle="GET STARTED"
                     description={[
                         "We are looking for large authorized distribution partners in any industry, with the goal of placing at least",
                         <span key="boldtext" className="font-bold">
