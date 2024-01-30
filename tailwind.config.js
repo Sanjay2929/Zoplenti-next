@@ -37,15 +37,16 @@ module.exports = {
         prussianBlue: "#002343",
         tealishBlue: "#081735",
         deepCove: "#051D39",
+        balckLight: "#303A4E",
         whiteGradient: "linear-gradient(180deg, #02A9F7 0%, #2262BC 116.35%)",
       },
       backgroundImage: {
-        herobg: "url('/assets/homepage/png/main-hero-bg-image.png')",
+        herobg: "url('/assets/images/homepage/png/main-hero-bg-image.png')",
         // headerbg: "url('/assets/images/header/png/notification-bar-bg.png')",
         // commonbgimage: "url('/assets/images/hero/png/common-bg-image.png')",
-        // footerbg: "url('/assets/images/footer/png/footer-bg.png')",
-        // corevaluebg:
-        //   "url('/assets/images/corevaluetimeline/png/bg-corevaluetimeline.png')",
+        footerbg: "url('/assets/images/footer/png/footer-bg.png')",
+        corevaluebg:
+          "url('/assets/images/coreValue/png/bg-corevaluetimeline.png')",
         // threestepbg:
         //   "url('/assets/images/brandspage/threestepprocess/png/three-step-bg-process.png')",
       },
