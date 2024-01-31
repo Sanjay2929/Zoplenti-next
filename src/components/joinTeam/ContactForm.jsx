@@ -2,7 +2,6 @@
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import CustomSuccessPopup from "../common/CustomSuccessPopup";
-import { RightArrowIcon } from "../common/icons/Home";
 import CustomInput from "../common/fields/CustomInput";
 import CustomButton from "../common/CustomButton";
 
