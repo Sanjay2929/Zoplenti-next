@@ -1,14 +1,18 @@
 import QuestionBrands from "../brands/QuestionBrands";
 import Footer from "../common/Footer";
 import HeroCommon from "../common/Hero";
+import ProcessSteps from "../common/ProcessSteps";
 import ReviewCards from "../common/ReviewCards";
 import Header from "../common/header/Header";
+import { DiscoveryIcon, HumanResourcesIcon, OrderingIcon } from "../common/icons/BrandsProcess";
 import BusinessDetails from "./BusinessDetails";
+// import DistributorsStepProcess from "./DistributorsStepProcess";
 import OpportunitiesCatalog from "./OpportunitiesCatalog";
 import { ReliableDistributor } from "./ReliableDistributor";
 
 export default function main() {
     // const distributionPartners = PartnersList[1].partnerslogo;
+
     return (
         <>
             <div className="bg-midnight">
@@ -23,6 +27,20 @@ export default function main() {
                         <span key="uniqueKey" className="font-bold"> {" "} but also create unique packs and bundles that increase the size of  our POs. </span>,]} />
                 <BusinessDetails />
                 {/* <DistributorsStepProcess /> */}
+                <ProcessSteps title="Enjoy a straightforward process with clear communication"
+                    titleStyle="max-w-[758px]"
+                    description="Who wants to work with people who don’t know what they’re doing?
+We keep things simple, straightforward, and move with purpose."
+                    descriptionStyle="pt-[18px]"
+                    stepFirstTitle="Discovery"
+                    stepFirstDescription="We jump on a call, and if we’re aligned in what we’re looking for, we open an account with you."
+                    stepSecondTitle="Analysis"
+                    stepSecondDescription="Our expert purchasing team reviews your product catalog, finding the juicy opportunities we live for."
+                    stepThirdTitle="Order"
+                    stepThirdDescription="We place our first test order, even pre-paid. And then, if things go well… many, many others large orders follow."
+                    stepFirstIcon={<DiscoveryIcon />}
+                    stepSecondIcon={<HumanResourcesIcon />}
+                    stepThridIcon={<OrderingIcon />} />
                 <QuestionBrands title="Do you have a large catalog of name brands?" Btntitle="GET STARTED" description={["We are looking for large authorized distribution partners in any industry, with the goal of placing at least",
                     <span key="boldtext" className="font-bold"> {" "} a quarter of a million dollars in POs a year.{" "}
                     </span>, "Hopefully, more. If that's you, fill the form below and we'll reach out to you to explore opportunities.",]} />
