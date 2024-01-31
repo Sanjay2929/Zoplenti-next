@@ -2,7 +2,6 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { DropDownArrowIcon } from "@/components/common/icons/GetStarted";
-import { RightArrowIcon } from "@/components/common/icons/Home";
 import contactList from "../common/json/GetStartedContactForm";
 import CustomSuccessPopup from "@/components/common/CustomSuccessPopup";
 import CustomInput from "../common/fields/CustomInput";
@@ -73,7 +72,6 @@ const ContactForm = () => {
       })
       .then(() => {
         setLoading(false);
-        // router.push("/submit-success");
         setSuccessPopup(true);
         setJoinFamilyDetails(false);
       })
@@ -152,19 +150,7 @@ const ContactForm = () => {
                     className="font-aeoniktrials font-normal text-base text-white pb-2 inline-block">
                     Email
                   </label>
-                  {/* <input
-                    type="email"
-                    required
-                    id="Email"
-                    className="w-full py-2 px-[14px] bg-alto rounded-md text-base font-aeoniktrials font-normal text-black text-opacity-[49%] placeholder:text-base placeholder:text-black placeholder:!text-opacity-[49%] outline-none"
-                    placeholder="nextpartner@zoplenti.com"
-                    onChange={(e) =>
-                      setJoinFamilyDetails({
-                        ...joinFamilyDetails,
-                        email: e.target.value,
-                      })
-                    }
-                  /> */}
+
                   <CustomInput
                     type="email"
                     placeholder="Lastname"
@@ -205,19 +191,7 @@ const ContactForm = () => {
                     className="font-aeoniktrials font-normal text-base text-white pb-2 inline-block">
                     Company name
                   </label>
-                  {/* <input
-                    required
-                    type="text"
-                    id="Companyname"
-                    className="w-full py-2 px-[14px] bg-alto rounded-md text-base font-aeoniktrials font-normal text-black text-opacity-[49%] placeholder:text-base placeholder:text-black placeholder:!text-opacity-[49%] outline-none"
-                    placeholder="Company name"
-                    onChange={(e) =>
-                      setJoinFamilyDetails({
-                        ...joinFamilyDetails,
-                        companyName: e.target.value,
-                      })
-                    }
-                  /> */}
+
                   <CustomInput
                     type="text"
                     placeholder="Company name"
@@ -250,19 +224,7 @@ const ContactForm = () => {
                     value={joinFamilyDetails.companyWebsiteName}
                     id="Companywebsite"
                   />
-                  {/* <input
-                    required
-                    type="text"
-                    id="Companywebsite"
-                    className="w-full py-2 px-[14px] bg-alto rounded-md text-base font-aeoniktrials font-normal text-black text-opacity-[49%] placeholder:text-base placeholder:text-black placeholder:!text-opacity-[49%] outline-none"
-                    placeholder="Company website"
-                    onChange={(e) =>
-                      setJoinFamilyDetails({
-                        ...joinFamilyDetails,
-                        companyWebsiteName: e.target.value,
-                      })
-                    }
-                  /> */}
+
                 </div>
               </div>
               <h4 className="font-aeoniktrials font-normal sm:text-[18px] text-[16px] text-white pb-2.5">
@@ -284,8 +246,8 @@ const ContactForm = () => {
                   <label
                     htmlFor="brand"
                     className={`w-[18px] h-[18px] rounded-full duration-200 cursor-pointer ${selectedRadio === "brand"
-                        ? " bg-dodgerBlue border-[3.5px] border-white"
-                        : "border bg-deepCove"
+                      ? " bg-dodgerBlue border-[3.5px] border-white"
+                      : "border bg-deepCove"
                       }`}></label>
                   <label
                     htmlFor="brand"
@@ -306,8 +268,8 @@ const ContactForm = () => {
                   <label
                     htmlFor="distributor"
                     className={`w-[18px] h-[18px] rounded-full duration-200 cursor-pointer ${selectedRadio === "distributor"
-                        ? " bg-dodgerBlue border-[3.5px] border-white"
-                        : "border bg-deepCove"
+                      ? " bg-dodgerBlue border-[3.5px] border-white"
+                      : "border bg-deepCove"
                       }`}></label>
                   <label
                     htmlFor="distributor"
