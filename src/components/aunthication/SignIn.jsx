@@ -27,10 +27,7 @@ const SignIn = () => {
     // SHOW ERROR FOR EMAIL AND PASSWORD
     setErrorShow(true);
     setToastShow(true);
-    // TOAST REMOVE AFTER THREE SECONDS
-    // setTimeout(() => {
-    //   setToastShow(false);
-    // }, 3000);
+
   };
   return (
     <>
@@ -97,24 +94,6 @@ const SignIn = () => {
           />
           {/* Sign-in form container */}
           <div className="w-full max-w-[516px]">
-            {/* {errorShow ? (
-              <div className="bg-red-200 py-2.5 px-4 mb-4 rounded-md">
-                <div className="flex gap-2">
-                  <CircleRedCrossIcon />
-                  <div>
-                    <h4 className="text-base text-black font-aeoniktrials font-bold">
-                      Error
-                    </h4>
-                    <p className="text-black text-[14px] md:text-base font-aeoniktrials">
-                      User does not exist.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ) : (
-              ""
-            )} */}
-
             <div className="w-full py-5 sm:py-7 bg-[rgba(255,_255,_255,_0.01)] blur_filter border border-[rgba(255,_255,_255,_0.20)] rounded-xl">
               <div className="pb-6 border-alto border-b border-opacity-20 flex justify-center">
                 {/* Zoplenti main logo link */}
@@ -156,8 +135,8 @@ const SignIn = () => {
                     }
                     type="email"
                     className={`bg-alto blur_filter outline-none rounded-[6px] font-aeoniktrials px-[14px] py-2.5 text-base md:text-lg !leading-[170%] font-normal text-black text-opacity-[49%] placeholder:text-black placeholder:opacity-[49%]  ${errorShow
-                        ? "outline-red-600 outline-offset-0 outline-[.5px]"
-                        : ""
+                      ? "outline-red-600 outline-offset-0 outline-[.5px]"
+                      : ""
                       }`}
                     placeholder="Email address"
                   />
@@ -181,8 +160,8 @@ const SignIn = () => {
                       }
                       type={showPassword ? "text" : "password"}
                       className={`w-full bg-alto blur_filter outline-none rounded-[6px] font-aeoniktrials ps-[14px] py-2.5 text-base md:text-lg !leading-[170%] pe-10 font-normal text-black text-opacity-[49%] placeholder:text-black placeholder:opacity-[49%] ${errorShow
-                          ? "outline-red-600 outline-offset-0 outline-[.5px]"
-                          : ""
+                        ? "outline-red-600 outline-offset-0 outline-[.5px]"
+                        : ""
                         }`}
                       placeholder="************"
                     />

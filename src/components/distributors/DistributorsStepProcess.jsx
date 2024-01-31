@@ -1,10 +1,5 @@
 import React from "react";
 import StepProcess from "../common/ProcessSteps";
-// import {
-//     DiscoveryIcon,
-//     HumanResourcesIcon,
-//     OrderingIcon,
-// } from "../common/Icons";
 
 const DistributorsStepProcess = () => {
     return (
@@ -22,9 +17,7 @@ We keep things simple, straightforward, and move with purpose."
                 step_second_description="Our expert purchasing team reviews your product catalog, finding the juicy opportunities we live for."
                 step_third_title="Order"
                 step_third_description="We place our first test order, even pre-paid. And then, if things go well… many, many others large orders follow."
-                // step_first_icon={<DiscoveryIcon />}
-                // step_second_icon={<HumanResourcesIcon />}
-                // step_thrid_icon={<OrderingIcon />}
+             
             />
         </>
     );

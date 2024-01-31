@@ -41,36 +41,6 @@ const ContactForm = () => {
   const capitalizeFirstLetter = (value) => {
     return value.charAt(0).toUpperCase() + value.slice(1);
   };
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-  //   emailjs.init("RD5_7T5hu6SDQxhiW");
-  //   setJoinTeamDetails(false);
-  //   if (fileFileName.length === 0) {
-  //     setErrorMessage(true);
-  //     return; // Don't proceed with form submission if there's an error
-  //   }
-  //   setLoading(true);
-
-  //   emailjs
-  //     .send("service_vnvpiol", "template_7r2ib31", {
-  //       firstName: joinTeamDetails.firstName,
-  //       lastName: joinTeamDetails.lastName,
-  //       email: joinTeamDetails.email,
-  //       file: joinTeamDetails.file,
-  //       comment: joinTeamDetails.interstead,
-  //     })
-  //     .then(() => {
-  //       setLoading(false);
-  //       setSuccessPopup(true);
-  //     })
-  //     .catch(() => {
-  //       setLoading(false);
-  //     });
-
-  //   e.target.reset();
-  //   setFileFileName("");
-  //   setErrorMessage(false);
-  // };
   const sendEmail = async (e) => {
     e.preventDefault();
     emailjs.init("0suRcadrJvfSgaeKp");

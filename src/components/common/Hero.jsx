@@ -1,7 +1,5 @@
-import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-// import { RightArrowIcon } from "./icons/Home";
 import CustomButton from "./CustomButton";
 
 const Hero = (props) => {

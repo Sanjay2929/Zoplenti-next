@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick.css";
 import amazonBetterResult from "../common/json/AmazonResult";
 import Image from "next/image";
 
-// import { amazonBetterResult } from "../common/Helper";
 const AmazonResult = () => {
   //slider settings
   var settings = {

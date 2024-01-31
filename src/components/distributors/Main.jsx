@@ -7,7 +7,6 @@ import PartnersList from "../common/json/PartnersList";
 
 import ReviewCards from "../common/ReviewCards";
 import Header from "../common/header/Header";
-// import Brands from "../common/partners/Brands";
 import BusinessDetails from "./BusinessDetails";
 import OpportunitiesCatalog from "./OpportunitiesCatalog";
 import { ReliableDistributor } from "./ReliableDistributor";
