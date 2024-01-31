@@ -28,7 +28,7 @@ const PrivacyPolicyDescription = () => {
               </li>
               <li className="font-aeoniktrials font-normal text-sm sm:text-base md:text-lg lg:text-xl !leading-[170%] text-white">
                 To send our newsletter but you can unsubscribe by clicking the
-                unsubscribe link or emailing{" "}
+                unsubscribe link or emailing
                 <Link
                   href="mailto:hello@zoplenti.com"
                   target="_blank"

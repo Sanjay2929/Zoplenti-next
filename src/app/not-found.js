@@ -1,4 +1,5 @@
 "use client";
+import CustomScrollBar from "@/components/common/CustomScrollBar";
 import Footer from "@/components/common/Footer";
 import Header from "@/components/common/header/Header";
 import { useEffect, useRef, useState } from "react";
@@ -25,21 +26,24 @@ const NotFound = () => {
   }, [lottie]);
 
   return (
-    <div className="bg-midnight">
-      {/* Navigation Bar */}
-      <Header />
-
-      {/* Main Content */}
-      <div className="min-h-screen !bg-black flex flex-col justify-center items-center">
-        <div className="h-[250px] max-w-[250px]" ref={zIcon}></div>
-        {/* Message for Not Found */}
-        <p className="text-white font-aeoniktrials mt-top  text-2xl sm:text-xl font-bold leading-[150%]">
-          Sorry, nothing to see here.
-        </p>
+    <>
+       
+      <CustomScrollBar /> 
+      <div className="bg-midnight">
+        {/* Navigation Bar */}
+        <Header />
+        {/* Main Content */}
+        <div className="min-h-screen !bg-black flex flex-col justify-center items-center">
+          <div className="h-[250px] max-w-[250px]" ref={zIcon}></div>
+          {/* Message for Not Found */}
+          <p className="text-white font-aeoniktrials mt-top  text-2xl sm:text-xl font-bold leading-[150%]">
+            Sorry, nothing to see here.
+          </p>
+        </div>
+        {/* Footer */}
+        <Footer />
       </div>
-      {/* Footer */}
-      <Footer />
-    </div>
+    </>
   );
 };
 

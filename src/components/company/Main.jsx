@@ -5,18 +5,21 @@ import { Process } from "./Process";
 import Members from "./Members";
 import Signatures from "./Signatures";
 import Footer from "../common/Footer";
+import CustomScrollBar from "../common/CustomScrollBar";
 
 const Company = () => {
   return (
     <>
+
+      <CustomScrollBar />
       <div className="bg-midnight">
         <Header />
         <Hero
           title={[
             "We are building the benchmark for what an",
             <span key="title_brands" className="text-dodgerBlue font-bold">
-              {" "}
-              Amazon partner{" "}
+
+              Amazon partner
             </span>,
             "should be",
           ]}

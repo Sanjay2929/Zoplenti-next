@@ -38,7 +38,7 @@ const Hero = (props) => {
             <div className="pt-[34px] flex gap-4">
               <CustomButton title="Get started" url="/get-started" />
               <div className={` hidden ${props.flex}`}>
-                {" "}
+
                 <CustomButton title="Join our team" url="/join-our-team" />
               </div>
             </div>

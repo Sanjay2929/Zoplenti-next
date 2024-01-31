@@ -19,7 +19,7 @@ const Hero = ({ isBannerVisible }) => {
         className={`flex-grow-[1] min-h-screen bg-herobg bg-cover bg-no-repeat relative h-full flex flex-col justify-center items-center overflow-hidden ${
           // Adjust top padding based on pathname and banner visibility
           pathName !== "/" && "pt-[60px]"
-        }  ${isBannerVisible ? "!pt-[60px]" : "pt-[150px]"} `}>
+          }  ${isBannerVisible ? "!pt-[60px]" : "pt-[150px]"} `}>
         {/* Left logo image */}
         <Image
           className="absolute w-[86px] sm:w-[130px] md:w-[150px] lg:w-[176px] start-[-60px] md:start-[-55px] lg:start-[-80px]"
@@ -40,7 +40,7 @@ const Hero = ({ isBannerVisible }) => {
         <div className="relative container max-w-[1140px] px-4 sm:px-8 mx-auto z-20 my-[60px] md:my-0 md:px-6 xl:px-8 flex flex-col items-center">
           {/* Main heading */}
           <h1 className="font-aeoniktrials  text-white text-4xl md:text-5xl lg:text-6xl font-normal text-center !leading-[133.333%] px-1 sm:px-0">
-            Say hello to <i>damn</i> extraordinary{" "}
+            Say hello to <i>damn</i> extraordinary
             <span className="font-bold text-dodgerBlue block">
               Amazon results
             </span>

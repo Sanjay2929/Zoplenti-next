@@ -20,7 +20,7 @@ const Footer = () => {
                   className="w-[33px] sm:w-10 md:w-[50px]"
                   width={50}
                   height={40}
-                  src="/assets/footer/png/footer-logo.png"
+                  src="/assets/images/footer/png/footer-logo.png"
                   alt="footer-logo"
                 />
                 <span className="uppercase font-Jost text-white font-medium text-2xl md:text-[28px] tracking-[0.84px] text-shadow ">
@@ -115,11 +115,11 @@ const Footer = () => {
                 </div>
                 <div className="max-w-[233px] pt-8 lg:pt-0">
                   <p className="text-white font-aeoniktrials font-normal text-sm !leading-[170%] opacity-50 lg:text-end">
-                    {" "}
+
                     ⓒ{year} Zoplenti. All Rights Reserved.
                   </p>
                   <p className="text-white font-aeoniktrials font-normal text-sm !leading-[170%] pt-[2px] lg:text-end">
-                    {" "}
+
                     <span className="opacity-50">Have a question? </span>
                     <Link
                       className="hover:text-curiousBlue transition-all duration-500 opacity-50 hover:opacity-100"
@@ -128,8 +128,8 @@ const Footer = () => {
                     </Link>
                   </p>
                   <p className="text-white font-aeoniktrials font-normal text-sm !leading-[170%] pt-[2px] lg:text-end">
-                    {" "}
-                    <span className="opacity-50">Ready to join us?</span>{" "}
+
+                    <span className="opacity-50">Ready to join us?</span>
                     <span className="relative before:absolute before:bottom-[-2px] before:w-full before:h-[1px] before:bg-white before:opacity-50 opacity-50 before:hover:bg-curiousBlue hover:text-curiousBlue before:hover:opacity-100 before:hover:w-0 before:duration-200 hover:opacity-100 transition-all duration-500">
                       <Link href="/join-our-team">We&apos;re hiring!</Link>
                     </span>

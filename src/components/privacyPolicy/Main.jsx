@@ -3,17 +3,19 @@ import Footer from "../common/Footer";
 import Header from "../common/header/Header";
 import Content from "./Content";
 import ScopePolicy from "./ScopePolicy";
+import CustomScrollBar from "../common/CustomScrollBar";
 
 const Main = () => {
   return (
     <>
+      <CustomScrollBar />
       <div className="bg-midnight">
         {/* <ScrollTop /> */}
         <Header />
         <Hero
           title={[
             <span key="titleHeading" className="text-dodgerBlue font-bold">
-              Zoplenti{" "}
+              Zoplenti
             </span>,
             "Privacy Policy",
           ]}

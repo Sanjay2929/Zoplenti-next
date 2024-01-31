@@ -25,7 +25,7 @@ const RoadMap = () => {
           {/* Left Column - Description */}
           <div className="w-full md:w-5/12 md:sticky top-[20%]">
             <h2 className="text-white max-w-[282px] sm:max-w-full font-aeoniktrials text-[32px] md:text-4xl !leading-[133.333%] lg:text-5xl font-bold">
-              Our tried and true process gets us results{" "}
+              Our tried and true process gets us results
             </h2>
             <p className="text-white xl:pe-20 hidden md:flex md:pe-5 lg:pe-0 pt-[18px] font-aeoniktrials font-normal text-sm sm:text-base md:text-lg lg:text-xl !leading-[170%]">
               We choose our vendors carefully, focusing on companies with a

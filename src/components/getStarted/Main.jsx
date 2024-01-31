@@ -3,10 +3,13 @@ import Footer from "@/components/common/Footer";
 import Header from "@/components/common/header/Header";
 import ZoplentiStatistics from "./ZoplentiStatistics";
 import ZoplentiFamily from "./ZoplentiFamily";
+import CustomScrollBar from "../common/CustomScrollBar";
 
 const GetStarted = () => {
   return (
     <>
+
+      <CustomScrollBar />
       <div className="bg-midnight">
         <Header />
         <Hero
