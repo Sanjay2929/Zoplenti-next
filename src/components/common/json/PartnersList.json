@@ -227,21 +227,21 @@
       },
       {
         "order": "order-0 sm:order-0",
-        "image": "/assets/images/partners/distributorPartners/svg/kala-logo.svg",
+        "image": "/assets/images/partners/brandsPartners/png/shepher-logo.png",
         "imageWidth": "148",
         "imageHeight": "45",
         "style": "max-w-[86px] sm:max-w-[100px] md:max-w-[120px] lg:!max-w-[148px]"
       },
       {
         "order": "order-0",
-        "image": "/assets/images/partners/distributorPartners/svg/bruder-logo.svg",
+        "image": "/assets/images/partners/brandsPartners/png/sp-richards-logo.png",
         "imageWidth": "173",
         "imageHeight": "37",
         "style": "max-w-[106px] sm:max-w-[120px] md:max-w-[140px] lg:!max-w-[173px]"
       },
       {
         "order": "order-0",
-        "image": "/assets/images/partners/distributorPartners/png/acd-logo.png",
+        "image": "/assets/images/partners/brandsPartners/png/sportsman-logo.png",
         "imageWidth": "307",
         "imageHeight": "27",
         "style": "max-w-[137px] sm:max-w-[170px] md:max-w-[240px] lg:!max-w-[307px]"
