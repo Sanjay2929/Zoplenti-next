@@ -1,5 +1,5 @@
 import React from "react";
-// import { RightClickIcon } from "../common/Icons";
+import { CommonBlueTick } from "../common/icons/ReliableDistributor";
 
 export const ReliableDistributor = () => {
     return (
@@ -25,7 +25,7 @@ export const ReliableDistributor = () => {
                             </p>
                             <div className="flex gap-4 sm:gap-5 relative z-10">
                                 <span>
-                                    {/* <RightClickIcon /> */}
+                                    <CommonBlueTick />
                                 </span>
                                 <p className="max-w-[465px] text-white font-aeoniktrials font-normal text-sm sm:text-base md:text-lg lg:text-xl !leading-[170%]">
                                     We have years of experience and work with some of the largest
@@ -42,7 +42,7 @@ export const ReliableDistributor = () => {
                                 </p>
                                 <div className="flex gap-4 sm:gap-5 relative z-10">
                                     <span>
-                                        {/* <RightClickIcon /> */}
+                                        <CommonBlueTick />
                                     </span>
                                     <p className="max-w-[469px] text-white font-aeoniktrials font-normal text-sm sm:text-base md:text-lg lg:text-xl !leading-[170%]">
                                         We are easy to work and communicate with, with dedicated
@@ -59,7 +59,7 @@ export const ReliableDistributor = () => {
                             </p>
                             <div className="flex gap-4 sm:gap-5 relative z-10">
                                 <span>
-                                    {/* <RightClickIcon /> */}
+                                    <CommonBlueTick />
                                 </span>
                                 <p className="max-w-[465px] text-white font-aeoniktrials font-normal text-sm sm:text-base md:text-lg lg:text-xl !leading-[170%]">
                                     We place large volume orders on a frequent, regular schedule,
@@ -75,7 +75,7 @@ export const ReliableDistributor = () => {
                                 </p>
                                 <div className="flex gap-4 sm:gap-5 relative z-10">
                                     <span >
-                                        {/* <RightClickIcon /> */}
+                                        <CommonBlueTick />
                                     </span>
                                     <p className="max-w-[469px] text-white font-aeoniktrials font-normal text-sm sm:text-base md:text-lg lg:text-xl !leading-[170%]">
                                         We are fanatical about MAP and reseller policies, so you can
@@ -92,7 +92,7 @@ export const ReliableDistributor = () => {
                             </p>
                             <div className="flex gap-4 sm:gap-5 relative z-10">
                                 <span>
-                                    {/* <RightClickIcon /> */}
+                                    <CommonBlueTick />
                                 </span>
                                 <p className="max-w-[465px] text-white font-aeoniktrials font-normal text-sm sm:text-base md:text-lg lg:text-xl !leading-[170%]">
                                     We use custom tech to analyze your catalog, which allows us to

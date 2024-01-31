@@ -12,10 +12,7 @@ export default function main() {
   // const distributionPartners = PartnersList[1].partnerslogo;
   return (
     <>
-      {" "}
-      <CustomScrollBar />
       <div className="bg-midnight">
-        {/* <ScrollTop /> */}
         <Header />
         <HeroCommon
           title={[
@@ -42,7 +39,7 @@ export default function main() {
             <span key="uniqueKey" className="font-bold">
               {" "}
               but also create unique packs and bundles that increase the size of
-              our POs.
+              our POs.{" "}
             </span>,
           ]}
         />
@@ -50,6 +47,7 @@ export default function main() {
         {/* <DistributorsStepProcess /> */}
         <QuestionBrands
           title="Do you have a large catalog of name brands?"
+          Btntitle="GET STARTED"
           description={[
             "We are looking for large authorized distribution partners in any industry, with the goal of placing at least",
             <span key="boldtext" className="font-bold">
