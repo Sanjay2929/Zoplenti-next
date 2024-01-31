@@ -55,7 +55,7 @@ const Main = () => {
           url="/get-started"
           buttonHidden="hidden"
           title="Get Started"
-        />
+/>
         <AmazonResult />
         <OpportunitiesCatalog
           maxWidth="max-w-[1024px]"
