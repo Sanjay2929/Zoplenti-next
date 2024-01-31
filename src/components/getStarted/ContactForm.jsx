@@ -283,11 +283,10 @@ const ContactForm = () => {
                   />
                   <label
                     htmlFor="brand"
-                    className={`w-[18px] h-[18px] rounded-full duration-200 cursor-pointer ${
-                      selectedRadio === "brand"
+                    className={`w-[18px] h-[18px] rounded-full duration-200 cursor-pointer ${selectedRadio === "brand"
                         ? " bg-dodgerBlue border-[3.5px] border-white"
                         : "border bg-deepCove"
-                    }`}></label>
+                      }`}></label>
                   <label
                     htmlFor="brand"
                     className="font-aeoniktrials font-base font-normal text-white">
@@ -306,11 +305,10 @@ const ContactForm = () => {
                   />
                   <label
                     htmlFor="distributor"
-                    className={`w-[18px] h-[18px] rounded-full duration-200 cursor-pointer ${
-                      selectedRadio === "distributor"
+                    className={`w-[18px] h-[18px] rounded-full duration-200 cursor-pointer ${selectedRadio === "distributor"
                         ? " bg-dodgerBlue border-[3.5px] border-white"
                         : "border bg-deepCove"
-                    }`}></label>
+                      }`}></label>
                   <label
                     htmlFor="distributor"
                     className="font-aeoniktrials font-base font-normal text-white">
@@ -378,7 +376,7 @@ const ContactForm = () => {
               />
               {/* button submit */}
               <div className="mt-8 sm:mt-10 md:mt-12">
-                {" "}
+
                 <CustomButton loading={loading} title="SUBMIT" url="null" />
               </div>
             </form>

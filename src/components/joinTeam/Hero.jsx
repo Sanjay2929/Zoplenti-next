@@ -45,7 +45,7 @@ const Hero = (props) => {
             {/* Main heading */}
             <h1
               className={`font-aeoniktrials text-white text-4xl md:text-5xl lg:text-6xl font-normal text-center !leading-[133.333%] mx-auto ${props.titleStyle}`}>
-              {props.title}{" "}
+              {props.title}
               <span className="text-dodgerBlue font-bold">
                 {props.title_span}
               </span>

@@ -61,7 +61,7 @@ const AmazonResult = () => {
       <div className="container md:px-12 xl:px-3 max-w-[1140px] px-4 sm:px-8 mx-auto">
         <div className="pt-[60px] pb-[72px] sm:py-20 md:py-[100px] lg:py-[120px] border-y-[1px] border-alto border-opacity-20">
           <h2 className="text-white text-center font-aeoniktrials text-[32px] md:text-4xl !leading-[133.333%] lg:text-5xl font-bold px-5 md:px-0">
-            We get you better results on{" "}
+            We get you better results on
             <span className="sm:block">Amazon, hands off</span>
           </h2>
           {/* Title for the Amazon store section */}

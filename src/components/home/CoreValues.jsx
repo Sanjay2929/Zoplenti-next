@@ -47,7 +47,7 @@ const CoreValue = () => {
               {/* Core Value 01 Content */}
               <div className="flex flex-col sm:justify-center sm:max-w-[520px] sm:ms-auto pt-5 sm:pt-0 sm:ps-3 sm:w-1/2 order-2 w-full">
                 <h3 className="text-white font-normal text-center sm:text-start font-aeoniktrials !leading-[138.889%] text-[28px] md:text-3xl lg:text-4xl">
-                  We&apos;re <span className="italic">champions</span> of{" "}
+                  We&apos;re <span className="italic">champions</span> of
                   <span className="text-dodgerBlue block">collaboration</span>
                 </h3>
                 <p className="text-white hidden sm:flex pt-[18px] px-[4px] sm:px-0 font-aeoniktrials text-center sm:text-start text-sm sm:text-base md:text-lg lg:text-xl font-normal !leading-[170%] md:min-h-[68px]">
@@ -61,7 +61,7 @@ const CoreValue = () => {
               <div className="pt-5 sm:w-1/2 sm:order-3 order-4 w-full sm:pe-3 flex flex-col sm:justify-center sm:pt-[60px] md:pt-20 lg:pt-[100px]">
                 <div className="flex flex-col sm:max-w-[483px]">
                   <h3 className="text-white font-normal text-center sm:text-start font-aeoniktrials !leading-[138.889%] text-[28px] md:text-3xl lg:text-4xl">
-                    We&apos;re <span className="italic">architects</span> of{" "}
+                    We&apos;re <span className="italic">architects</span> of
                     <span className="text-dodgerBlue block">growth</span>
                   </h3>
                   <p className="text-white hidden sm:flex pt-[18px] px-3 sm:px-0 font-aeoniktrials text-center sm:text-start text-sm sm:text-base md:text-lg lg:text-xl font-normal !leading-[170%] md:min-h-[68px]">
@@ -87,7 +87,7 @@ const CoreValue = () => {
               {/* Core Value 03 Content */}
               <div className="flex flex-col sm:justify-center sm:max-w-[520px] sm:ms-auto pt-5 sm:ps-3 sm:w-1/2 order-6 w-full sm:pt-[60px] md:pt-20 lg:pt-[85px]">
                 <h3 className="text-white font-normal text-center sm:text-start font-aeoniktrials !leading-[138.889%] text-[28px] md:text-3xl lg:text-4xl max-w-[320px] sm:max-w-[368px] mx-auto sm:mx-0">
-                  We <span className="italic">always</span> stay one step{" "}
+                  We <span className="italic">always</span> stay one step
                   <span className="text-dodgerBlue">ahead</span>
                 </h3>
                 <p className="text-white hidden sm:flex px-3 sm:px-0 font-aeoniktrials pt-[18px] text-center sm:text-start text-sm sm:text-base md:text-lg lg:text-xl font-normal !leading-[170%] md:min-h-[68px]">

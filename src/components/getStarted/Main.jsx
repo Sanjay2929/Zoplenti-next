@@ -8,7 +8,7 @@ import CustomScrollBar from "../common/CustomScrollBar";
 const GetStarted = () => {
   return (
     <>
-      {" "}
+
       <CustomScrollBar />
       <div className="bg-midnight">
         <Header />

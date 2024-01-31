@@ -38,9 +38,8 @@ const SignIn = () => {
       <div className="bg-midnight">
         {/* TOAST NOTIFICATION  */}
         <div
-          className={`fixed right-0 bottom-5 duration-200 z-50 ${
-            toastShow ? "translate-x-0" : "translate-x-full"
-          }`}>
+          className={`fixed right-0 bottom-5 duration-200 z-50 ${toastShow ? "translate-x-0" : "translate-x-full"
+            }`}>
           <div className="bg-midnight border border-white max-w-[450px] py-4 ps-5 pe-4 rounded-md relative mx-4">
             <span
               onClick={() => setToastShow(false)}
@@ -156,11 +155,10 @@ const SignIn = () => {
                       })
                     }
                     type="email"
-                    className={`bg-alto blur_filter outline-none rounded-[6px] font-aeoniktrials px-[14px] py-2.5 text-base md:text-lg !leading-[170%] font-normal text-black text-opacity-[49%] placeholder:text-black placeholder:opacity-[49%]  ${
-                      errorShow
+                    className={`bg-alto blur_filter outline-none rounded-[6px] font-aeoniktrials px-[14px] py-2.5 text-base md:text-lg !leading-[170%] font-normal text-black text-opacity-[49%] placeholder:text-black placeholder:opacity-[49%]  ${errorShow
                         ? "outline-red-600 outline-offset-0 outline-[.5px]"
                         : ""
-                    }`}
+                      }`}
                     placeholder="Email address"
                   />
                   {/* Password input */}
@@ -182,11 +180,10 @@ const SignIn = () => {
                         })
                       }
                       type={showPassword ? "text" : "password"}
-                      className={`w-full bg-alto blur_filter outline-none rounded-[6px] font-aeoniktrials ps-[14px] py-2.5 text-base md:text-lg !leading-[170%] pe-10 font-normal text-black text-opacity-[49%] placeholder:text-black placeholder:opacity-[49%] ${
-                        errorShow
+                      className={`w-full bg-alto blur_filter outline-none rounded-[6px] font-aeoniktrials ps-[14px] py-2.5 text-base md:text-lg !leading-[170%] pe-10 font-normal text-black text-opacity-[49%] placeholder:text-black placeholder:opacity-[49%] ${errorShow
                           ? "outline-red-600 outline-offset-0 outline-[.5px]"
                           : ""
-                      }`}
+                        }`}
                       placeholder="************"
                     />
                     {/* Password visibility toggle */}
@@ -216,7 +213,7 @@ const SignIn = () => {
                     <button
                       type="submit"
                       className="uppercase text-nowrap group shadow-[0px_0px_11px_0px_rgba(2,_169,_247,_0.33)] text-white font-aeoniktrials font-bold text-base py-[11px] px-[14px] rounded bg-dodgerBlue flex items-center gap-[6px] group hover:bg-transparent border border-solid border-dodgerBlue hover:border-white transition-all duration-300 !leading-[150%] w-full justify-center">
-                      Sign IN{" "}
+                      Sign IN
                       <span className="group-hover:translate-x-[4px] duration-300">
                         <RightArrowIcon />
                       </span>

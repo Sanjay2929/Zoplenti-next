@@ -20,8 +20,8 @@ const Main = () => {
   const [isBannerVisible, setIsBannerVisible] = useState(false);
   return (
     <>
-      {" "}
-      <CustomScrollBar />{" "}
+
+      <CustomScrollBar />
       <div className="bg-midnight">
         <Header
           isBannerVisible={isBannerVisible}
@@ -31,8 +31,8 @@ const Main = () => {
           title={[
             "The",
             <span key="title_brands" className="text-dodgerBlue font-bold">
-              {" "}
-              Amazon partner{" "}
+
+              Amazon partner
             </span>,
             "that is your brand’s unfair advantage",
           ]}
@@ -63,7 +63,7 @@ const Main = () => {
           description={[
             "We developed a custom analysis process to find the right levers to move for your brand, pouring in all the collective experience of the best & brightest people in the Amazon business.",
             <span key="textbold" className="font-bold">
-              {" "}
+
               The result? A scientific, surefire way to plan and execute
               massivegrowth on Amazon for the long term.
             </span>,

@@ -17,7 +17,7 @@ const Main = () => {
   const [isBannerVisible, setIsBannerVisible] = useState(false);
   return (
     <>
-      {" "}
+
       <CustomScrollBar />
       <div className="bg-midnight ">
         <Header

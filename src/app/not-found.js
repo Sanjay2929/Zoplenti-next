@@ -27,8 +27,8 @@ const NotFound = () => {
 
   return (
     <>
-      {" "}
-      <CustomScrollBar />{" "}
+       
+      <CustomScrollBar /> 
       <div className="bg-midnight">
         {/* Navigation Bar */}
         <Header />

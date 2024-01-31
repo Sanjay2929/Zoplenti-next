@@ -10,7 +10,7 @@ import CustomScrollBar from "../common/CustomScrollBar";
 const Company = () => {
   return (
     <>
-      {" "}
+
       <CustomScrollBar />
       <div className="bg-midnight">
         <Header />
@@ -18,8 +18,8 @@ const Company = () => {
           title={[
             "We are building the benchmark for what an",
             <span key="title_brands" className="text-dodgerBlue font-bold">
-              {" "}
-              Amazon partner{" "}
+
+              Amazon partner
             </span>,
             "should be",
           ]}

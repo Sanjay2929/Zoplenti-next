@@ -15,7 +15,7 @@ const Main = () => {
         <Hero
           title={[
             <span key="titleHeading" className="text-dodgerBlue font-bold">
-              Zoplenti{" "}
+              Zoplenti
             </span>,
             "Privacy Policy",
           ]}

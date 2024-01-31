@@ -17,13 +17,13 @@ export const Process = () => {
         stepFirstDescription={[
           "We are ranked among the",
           <span key="textBlod" className="font-bold">
-            {" "}
-            top 0.01% of Amazon sellers{" "}
+
+            top 0.01% of Amazon sellers
           </span>,
           "with a flawless",
           <span key="boldtext" className="font-bold">
-            {" "}
-            100% positive rating{" "}
+
+            100% positive rating
           </span>,
           "from customers. And we’re very, very proud of it.",
         ]}
@@ -31,8 +31,8 @@ export const Process = () => {
         stepSecondDescription={[
           "In 2022 we were recognized as one of",
           <span key="textBlod" className="font-bold">
-            {" "}
-            Inc.’s 5000 fastest growing American companies,{" "}
+
+            Inc.’s 5000 fastest growing American companies,
           </span>,
           "and we keep growing.",
         ]}
@@ -40,8 +40,8 @@ export const Process = () => {
         stepThirdDescription={[
           "We are a family-run business,",
           <span key="textBlod" className="font-bold">
-            {" "}
-            active since 2016{" "}
+
+            active since 2016
           </span>,
           "and headquartered in Tampa, Florida.",
         ]}
