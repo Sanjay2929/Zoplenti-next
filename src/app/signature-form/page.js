@@ -1,9 +1,9 @@
-import SignatureEmailForm from "@/components/email-signatures/SignatureEmailForm";
+import SignatureEmail from "@/components/email-signatures/SignatureEmail";
 
 const page = () => {
   return (
     <div className="bg-midnight min-h-screen">
-      <SignatureEmailForm />
+      <SignatureEmail />
     </div>
   );
 };

@@ -3,8 +3,10 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const SignatureEmailForm = () => {
+  // State to manage loading state of the form
   const [loading, setLoading] = useState(false);
-  // const {emailSignatureData, setEmailSignatureData } = useGlobalInfoProvider();
+
+  // State to manage email signature data
   const [emailSignatureData, setEmailSignatureData] = useState({
     firstName: "",
     lastName: "",
@@ -20,10 +22,15 @@ const SignatureEmailForm = () => {
     );
   }, [emailSignatureData]);
 
+  // Next.js router instance
   const router = useRouter();
+
+  // Form submission handler
   const signatureEmailData = (e) => {
     e.preventDefault();
     setLoading(true);
+
+    // Simulate a delay and then navigate to "/email-signature"
     setTimeout(() => {
       router.push("/email-signature");
     }, 1500);
@@ -38,6 +45,7 @@ const SignatureEmailForm = () => {
         {/* First and Last Name Inputs */}
         <div className="flex-col sm:flex-row flex">
           <div className="flex flex-col">
+            {/* First Name Input */}
             <label
               htmlFor="first-name"
               className="text-santasGray text-[12px] font-normal font-Inter mb-2">
@@ -59,6 +67,7 @@ const SignatureEmailForm = () => {
             />
           </div>
           <div className="flex flex-col sm:ms-2 mt-4 sm:mt-0">
+            {/* Last Name Input */}
             <label
               htmlFor="last-name"
               className="text-santasGray text-[12px] font-normal font-Inter mb-2">
@@ -83,6 +92,7 @@ const SignatureEmailForm = () => {
         {/* Title and Email Inputs */}
         <div className="flex-col sm:flex-row flex mt-4">
           <div className="flex flex-col">
+            {/* Title Input */}
             <label
               htmlFor="title"
               className="text-santasGray text-[12px] font-normal font-Inter mb-2">
@@ -104,6 +114,7 @@ const SignatureEmailForm = () => {
             />
           </div>
           <div className="flex flex-col sm:ms-2 mt-4 sm:mt-0">
+            {/* Email Input */}
             <label
               htmlFor="email"
               className="text-santasGray text-[12px] font-normal font-Inter mb-2">

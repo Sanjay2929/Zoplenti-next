@@ -3,9 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
+// Importing necessary modules and components
+
 const SignatureEmail = () => {
+  // Create a reference for the content element
   const contentRef = useRef(null);
-  // const { emailSignatureData } = useGlobalInfoProvider();
+
+  // Initialize state for email signature data
   const [emailSignatureData, setEmailSignatureData] = useState({
     firstName: "",
     lastName: "",
@@ -20,7 +24,11 @@ const SignatureEmail = () => {
       setEmailSignatureData(JSON.parse(storedData));
     }
   }, []);
+
+  // Initialize state for copy status
   const [copy, setCopy] = useState(false);
+
+  // Handle click event for copying content to clipboard
   const handleCopyClick = () => {
     const contentElement = contentRef.current;
     if (contentElement) {
@@ -36,7 +44,7 @@ const SignatureEmail = () => {
       try {
         // Execute the copy command
         document.execCommand("copy");
-        // alert("Content copied to clipboard!");
+        // Set copy status to true and reset after a delay
         setCopy(true);
         setTimeout(() => {
           setCopy(false);
@@ -50,30 +58,30 @@ const SignatureEmail = () => {
     }
   };
 
+  // JSX structure for rendering the email signature
   return (
     <div className="bg-midnight min-h-screen p-5">
       <div className="max-w-[600px] bg-white relative p-[18px]">
         <div className="flex items-start" ref={contentRef}>
           <div className="custom_mobile_padding w-full border-collapse">
+            {/* Displaying Full Name and Title */}
             <p className="text-firefly font-aeoniktrials text-[13px] font-semibold leading-[10px] m-0">
-              {/* Full Name */}
               {emailSignatureData.firstName} {emailSignatureData.lastName}
               <span className="border-l-[1px] border-solid border-santasGray rounded-[20px] w-0 h-3 ml-1"></span>
               <span className="text-rollingStone font-normal opacity-80 decoration-0 ps-1">
-                {/* Title at Zoplenti */}
                 {emailSignatureData.title}
               </span>
             </p>
+            {/* Displaying Email Address */}
             <Link
               className="font-aeoniktrials no-underline list-none text-[13px] text-santasGray leading-[15px] inline-block font-normal"
               style={{
                 color: "#9999A6",
               }}
-              // href="mailto:steven@zoplenti.com"
               href={`mailto:${emailSignatureData.email}`}>
-              {/* firstname@zoplenti.com */}
               {emailSignatureData.email}
             </Link>
+            {/* Displaying Website Link */}
             <p className="leading-[8px] mb-0">
               <Link
                 style={{
@@ -85,6 +93,7 @@ const SignatureEmail = () => {
                 zoplenti.com
               </Link>
             </p>
+            {/* Displaying Zoplenti Logo */}
             <div style={{ paddingTop: "18px" }}>
               <Link target="_blank" href="https://zoplenti.com">
                 <Image
@@ -97,10 +106,10 @@ const SignatureEmail = () => {
             </div>
           </div>
         </div>
+        {/* Copy button and status */}
         <div
           className="p-[30px] font-aeoniktrials text-santasGray absolute flex items-center cursor-pointer end-0 bottom-0"
           onClick={handleCopyClick}>
-          {/* Copy button */}
           <button className="border-0 bg-transparent d-block mx-auto">
             {copy ? (
               <Image

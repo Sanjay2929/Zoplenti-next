@@ -1,9 +1,9 @@
-import SignatureEmail from "@/components/email-signatures/SignatureEmail";
+import SignatureEmailForm from "@/components/email-signatures/SignatureEmailForm";
 
 const page = () => {
   return (
     <>
-      <SignatureEmail />
+      <SignatureEmailForm />{" "}
     </>
   );
 };
