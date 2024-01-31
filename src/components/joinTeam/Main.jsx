@@ -18,6 +18,7 @@ export const Main = () => {
         />
         <Steps />
         <Footer />
+        <CustomScrollBar />
       </div>
     </>
   );

@@ -72,11 +72,12 @@ const ContactForm = () => {
   //   setFileFileName("");
   //   setErrorMessage(false);
   // };
-  const sendEmail = (e) => {
+  const sendEmail  = async (e) => {
     e.preventDefault();
-    emailjs.init("RelMWT8AEo2vvSl4e");
+    emailjs.init("0suRcadrJvfSgaeKp");
 
     // Check if file is not selected
+ try {
     if (!joinTeamDetails.fileFile) {
       setErrorMessage(true);
       return; // Don't proceed with form submission if there's an error
@@ -86,27 +87,26 @@ const ContactForm = () => {
 
     setLoading(true);
 
-    emailjs
-      .send("service_ehkdcul", "template_3o3dpdc", {
-        firstName: joinTeamDetails.firstName,
-        lastName: joinTeamDetails.lastName,
-        email: joinTeamDetails.email,
-        file: joinTeamDetails.file,
-        comment: joinTeamDetails.interstead,
-      })
-      .then(() => {
-        setLoading(false);
-        setSuccessPopup(true);
-        setJoinTeamDetails(false);
-      })
-      .catch(() => {
-        setLoading(false);
-      });
+    await emailjs.send("service_wysi0vc", "template_8chg14e", {
+      firstName: joinTeamDetails.firstName,
+      lastName: joinTeamDetails.lastName,
+      email: joinTeamDetails.email,
+      // file: joinTeamDetails.file,
+      comment: joinTeamDetails.interstead,
+    });
+
+    setLoading(false);
+    setSuccessPopup(true);
+    setJoinTeamDetails(false);
 
     // Do not reset the form, just clear file-related state
     setFileFileName("");
     setErrorMessage(false);
-  };
+  } catch (error) {
+    setLoading(false);
+    // Handle the error, log it, or show an error message
+    console.error("Email sending failed:", error);
+  }
 
   return (
     <>

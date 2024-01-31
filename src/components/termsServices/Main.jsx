@@ -1,3 +1,4 @@
+import CustomScrollBar from "../common/CustomScrollBar";
 import Footer from "../common/Footer";
 import Hero from "../common/Hero";
 import Header from "../common/header/Header";
@@ -8,6 +9,7 @@ import { TermsOfUseDescription } from "./TermsOfUseContent";
 const Main = () => {
   return (
     <>
+      <CustomScrollBar />
       <div className="bg-midnight">
         <Header />
         <Hero

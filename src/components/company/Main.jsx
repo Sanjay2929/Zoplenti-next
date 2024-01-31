@@ -5,10 +5,13 @@ import { Process } from "./Process";
 import Members from "./Members";
 import Signatures from "./Signatures";
 import Footer from "../common/Footer";
+import CustomScrollBar from "../common/CustomScrollBar";
 
 const Company = () => {
   return (
     <>
+      {" "}
+      <CustomScrollBar />
       <div className="bg-midnight">
         <Header />
         <Hero
